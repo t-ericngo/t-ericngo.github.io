@@ -11,11 +11,13 @@ redirect_from:
 
 A more detailed Resume can be found here: https://drive.google.com/file/d/1DOywJyJeKieADj8XCaWj6kfnAFG2OEDN/view?usp=sharing
 
+
 Education
 ======
 * Ph.D Candidate in Political Science, University of Iowa, 2027 (expected)
 * M.A. in Political Science, University of Iowa, 2023
 * B.S. in Political Science & International Relations, Truman State University, 2021
+
 
 Work experience
 ======
@@ -42,7 +44,6 @@ Work experience
     * Delivered insights and policy recommendations via a presentation and 18-page report to Truman State authorities.
   * Supervisor: Prof. Scott Albert
 
-
   
 Skills
 ======
@@ -51,28 +52,48 @@ Skills
 * **Languages:** Vietnamese (Native), English (Fluent), Japanese (Elementary)
 
 
-Publications
+Working Papers
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
+
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
+Honors
+======
+* 04/2025: Outstanding Teaching Assistant Award ($1000), University of Iowa
+* 09/2024: Best Graduate Seminar Research Paper ($250), Department of Political Science, University of Iowa
+
+
+Scholarships & Grants
+======
+* 09/2025: Travel Award ($500), WhoGov Workshop on Political Elites, University of Oslo
+* 07/2025: PolMeth Travel & Accommodation Award ($700), Society for Political Methodology (Declined)
+* 06/2025: Travel & Accommodation Award ($6000), Swedish Research School in Computational Social Science
+* 02/2025: Post-Comprehensive Exam Research Fellowship ($11,000), Graduate College, University of Iowa
+* 08/2021: Iowa Recruitment Fellowship ($45,000), Graduate College, University of Iowa
+* 06/2020: Grants-in-Aid of Scholarship and Research ($1500), Truman State University
+* 08/2017: Truman State Presidential Scholarship ($36,000), Truman State University
+
+
 Service and leadership
 ======
-* 2024: Graduate Student Representative, IR Faculty Recruitment Committee, UIowa Political Science Department
-* 2023 – 2024: Co-Coordinator, International Relations (IR) Workshop Series, UIowa Political Science Department
+* 2024: Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa
+* 2023 – 2024: Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa
 * 2019 – 2020: President, Vietnamese Student Association (VSA), Truman State University
 * 2018 – 2019: Representative of the Student Government, Undergraduate Faculty Council, Truman State University
 
