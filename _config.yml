@@ -242,7 +242,7 @@ defaults:
       author_profile: true
   # _teaching
   - scope:
-      path: ""
+      path: "_teaching"
       type: teaching
     values:
       layout: single
@@ -251,7 +251,7 @@ defaults:
       comments: true
   # _publications
   - scope:
-      path: ""
+      path: "_publications"
       type: publications
     values:
       layout: single
@@ -269,7 +269,7 @@ defaults:
       comment: true
   # _talks
   - scope:
-      path: ""
+      path: "_talks"
       type: talks
     values:
       layout: talk
