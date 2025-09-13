@@ -21,7 +21,7 @@ repository               : "t-ericngo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo-main.jpg"
   name             : "T. Eric Ngo"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate at University of Iowa, passionate about international relations, authoritarian regimes, and computational social sciences"
