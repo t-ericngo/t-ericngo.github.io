@@ -1,11 +1,17 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+Welcome! I am a PhD candidate in the Department of Political Science at the University of Iowa. 
+Substantively, my primary research interests lie at the nexus of international relations, foreign policy, comparative politics, and computational social science (CSS). In my ongoing dissertation project, I explore how networks of political elites influence constraints on the top leader, thereby shaping policy and political outcomes such as international conflict, repression, and elite in-fighting. To do this, I construct an original database of elite networks across countries and years, employing fine-tuned Large Language Models (LLMs) for extract information about elites' biographies and relationships.
+More broadly, I am interested in te interplay between domestic and international elements and their implications to state behavior. In my other work, I examine how domestic factors such as ethnic inequality and political institutions influence states' external conflict behavior. I am also examining how political turnovers and domestic institutions shape the foreign aid competition between superpowers, namely the US and China.
+
+
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
