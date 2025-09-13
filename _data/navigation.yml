@@ -6,14 +6,14 @@
 
 main:
   - title: "Research & Projects"
-    url: "https://github.com/t-ericngo/t-ericngo.github.io/tree/44bb3c09c58f0b0b6d707ed104e026c8a7a77612/_publications"
+    url: "_publications"
 
   - title: "Talks"
-    url: /_talks/    
+    url: "_talks"    
 
   - title: "Teaching"
-    url: /_teaching/    
+    url: "_teaching"    
     
   - title: "CV"
-    url: /_cv/
+    url: "_cv"
   
