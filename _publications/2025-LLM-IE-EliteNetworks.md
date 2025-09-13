@@ -1,6 +1,6 @@
 ---
 title: "Unveiling Autocratic Elite Networks Using Large Language Models (LLMs)"
-# collection: publications
+collection: publications
 category: manuscripts
 # permalink: /publication/2025-LLM-IE-EliteNetworks
 excerpt: 'A new framework of automated text-to-network pipeline using LLMs.'
