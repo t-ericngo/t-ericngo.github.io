@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "University of Iowa, Department of Political Science"
-date: 2024-08
+date: 2024-08-01
 location: "Iowa City, Iowa, USA"
 ---
 
