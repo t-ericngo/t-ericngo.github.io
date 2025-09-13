@@ -1,8 +1,8 @@
 ---
 title: "Unveiling Autocratic Elite Networks Using Large Language Models (LLMs)"
 # collection: publications
-# category: conferences
-# permalink: /publication/2024-02-17-paper-title-number-4
+category: manuscripts
+# permalink: /publication/2025-LLM-IE-EliteNetworks
 excerpt: 'A new framework of automated text-to-network pipeline using LLMs.'
 # date: 2024-02-17
 # venue: 'GitHub Journal of Bugs'
