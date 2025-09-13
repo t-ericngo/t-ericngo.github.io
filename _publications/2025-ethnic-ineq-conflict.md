@@ -1,11 +1,11 @@
 ---
 title: "Us Versus Them: Ethnic Inequality, Diversionary Nationalism, and International Conflict"
-collection: publications
+# collection: publications
 category: manuscripts
 # permalink: # /publication/2025-ethnic-ineq-conflict
 excerpt: 'An analysis of ethnic political inequality and diversionary conflict.'
 # date: # 2010-10-01
-venue: 'Revise & Resubmit'
+# venue: 'Revise & Resubmit'
 # slidesurl: # 'http://academicpages.github.io/files/slides2.pdf'
 # paperurl: # 'http://academicpages.github.io/files/paper2.pdf'
 # citation: #'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
