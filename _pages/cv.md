@@ -1,5 +1,3 @@
-
-
 ---
 layout: archive
 title: "CV"
@@ -9,9 +7,9 @@ redirect_from:
   - /resume
 ---
 
-A more detailed Resume can be found here: https://drive.google.com/file/d/1DOywJyJeKieADj8XCaWj6kfnAFG2OEDN/view?usp=sharing
-
 {% include base_path %}
+
+A more detailed Resume can be found here: https://drive.google.com/file/d/1DOywJyJeKieADj8XCaWj6kfnAFG2OEDN/view?usp=sharing
 
 Education
 ======
