@@ -24,7 +24,7 @@ author:
   avatar           : "bio-photo-main.JPG"
   name             : "T. Eric Ngo"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate at UIowa, passionate about IR, authoritarian regimes, and computational social sciences"
+  bio              : "PhD Candidate at UIowa, passionate about international relations, authoritarian regimes, and computational social sciences"
   location         : "Iowa City, IA, USA"
   employer         : "University of Iowa"
   uri              : # URL
@@ -51,17 +51,13 @@ author:
   twitter          : "ericngo11t"
   bluesky          : "t-ericngo.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
-  keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "tu-ducanh-ngo"
   mastodon         : # URL
   medium           : # URL
-  pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
   telegram         : # URL
