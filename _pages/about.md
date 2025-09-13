@@ -21,6 +21,6 @@ I received my M.A. from the Department of Political Science at the University of
 
 I am a proud native of Vietnam. Comming from a central province of the Vietnam and now live at the Midwestern region of the US, I am seemingly destined to the middle and agricultural region of wherever I live (funnily enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
 
-When I am not doing political sciency things, I love to read, binge-watch TV shows, working out, and travel.
+When I am not doing political sciency things, I love to read, binge-watch TV shows, work out, and travel.
 
 Feel free to reach me via my email (tu-ngo@uiowa.edu).
