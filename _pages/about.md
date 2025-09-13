@@ -19,8 +19,8 @@ My background & history
 ========
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
-I am a proud native of Vietnam. Comming from a central province of the Vietnam and now live at the Midwestern region of the US, I am seemingly destined to the middle and agricultural region of wherever I live (funnily enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
+I am a proud native of Vietnam. Comming from a central province of the Vietnam and now reside in the US's Midwestern region, I am seemingly fated to the middle and agricultural region of wherever I live (funnily enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
 
-When I am not doing political sciency things, I love to read, binge-watch TV shows, work out, and travel.
+Besides doing political sciency things, I love to read, binge-watch TV shows, work out, travel, and occasionally pretend to be a guitar player.
 
 Feel free to reach me via my email (tu-ngo@uiowa.edu).
