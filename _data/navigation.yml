@@ -15,5 +15,5 @@ main:
     url: /teaching/    
     
   - title: "CV"
-    url: /cv/
+    url: /_pages/cv.md/
   
