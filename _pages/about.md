@@ -13,13 +13,13 @@ Substantively, my primary research interests lie at the nexus of international r
 
 More broadly, I am interested in te interplay between domestic and international elements and their implications to state behavior. In my other work, I examine how domestic factors such as ethnic inequality and political institutions influence states' external conflict behavior. I am also examining how political turnovers and domestic institutions shape the foreign aid competition between superpowers, namely the US and China.
 
-Methodologically, I prioritize a mixed-method approach to studying social phenomenon, combining quantitative cross-sectional time-series methods with qualitative archive studies and interviews. I am a skeptical enthusiast of careful and ethical applications of computational methods, specifically LLMs, AI, and machine learning, to solve data challenges in social sciences. 
+Methodologically, I adopt a mixed-method approach to studying social phenomenon, combining quantitative cross-sectional time-series techniques with qualitative archive studies and interviews. I can implement methods such as generalized linear models, time-series analysis, and network analysis in Stata, R, and Python. I am also a cautious enthusiast of careful and ethical applications of computational methods, specifically LLMs, AI, and machine learning, to solving data challenges in social sciences.
 
 My background & history
 ========
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
-I am a proud native of Vietnam. Comming from a central province of the Vietnam and now at the Midwestern region of the US, I am seemingly destined to the middle and agricultural region of wherever I live (funnily enough, my surname in Vietnamese means "corn", which is a major agricultural product of Iowa and Missouri). 
+I am a proud native of Vietnam. Comming from a central province of the Vietnam and now live at the Midwestern region of the US, I am seemingly destined to the middle and agricultural region of wherever I live (funnily enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
 
 When I am not doing political sciency things, I love to read, binge-watch TV shows, working out, and travel.
 
