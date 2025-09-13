@@ -9,12 +9,13 @@ redirect_from:
 
 Welcome! I am a PhD candidate in the Department of Political Science at the University of Iowa. 
 
-Substantively, my primary research interests lie at the nexus of international relations, foreign policy, comparative politics, and computational social science (CSS). In my ongoing dissertation project, I explore how networks of political elites influence constraints on the top leader, thereby shaping policy and political outcomes such as international conflict, repression, and elite in-fighting. To do this, I construct an original database of elite networks across countries and years, employing fine-tuned artificial intelligence (AI) models to extract information about elites' biographies and relationships.
+Substantively, my primary research interests lie at the nexus of international relations, foreign policy, comparative politics, and computational social science (CSS). In my ongoing dissertation project, I explore how networks of political elites influence constraints on the top leader, thereby shaping policy and political outcomes such as international conflict, repression, and elite in-fighting. To do this, I construct an original database of elite networks across countries and years, employing fine-tuned large language models (LLMs) to extract information about elites' biographies and relationships.
 
 More broadly, I am interested in te interplay between domestic and international elements and their implications to state behavior. In my other work, I examine how domestic factors such as ethnic inequality and political institutions influence states' external conflict behavior. I am also examining how political turnovers and domestic institutions shape the foreign aid competition between superpowers, namely the US and China.
 
+Methodologically, I prioritize a mixed-method approach to studying social phenomenon, combining quantitative cross-sectional time-series methods with qualitative archive studies and interviews. I am a skeptical enthusiast of careful and ethical applications of computational methods, specifically LLMs, AI, and machine learning, to solve data challenges in social sciences. 
 
-My background
+My background & history
 ========
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
