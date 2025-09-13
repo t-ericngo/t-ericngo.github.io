@@ -1,0 +1,9 @@
+---
+title: "Intro to Comparative Politics (Virtual) (TA)"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/2023-spring-teaching
+venue: "University of Iowa, Department of Political Science"
+date: 2023-01-01
+location: "Iowa City, IA, USA"
+---
