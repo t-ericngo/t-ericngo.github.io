@@ -1,11 +1,11 @@
 ---
 layout: archive
 title: "Research"
-permalink: /workingpapers/
+permalink: /research/
 author_profile: true
 ---
-{% include base_path %}
 
+{% include base_path %}
 {% for wp in site.workingpapers %}
   {% include archive-single.html type="list" show_date=false %}
 {% endfor %}
