@@ -1,6 +1,6 @@
 ---
 title: "Us Versus Them: Ethnic Inequality, Diversionary Nationalism, and International Conflict"
-collection: publications
+collection: workingpapers
 category: manuscripts
 # permalink: # /publication/2025-ethnic-ineq-conflict
 excerpt: 'An analysis of ethnic political inequality and diversionary conflict.'
