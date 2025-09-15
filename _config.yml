@@ -258,6 +258,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _workingpapers
+  - scope:
+      path: "_workingpapers"
+      type: "workingpapers"
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
   # _publications
   - scope:
       path: "_publications"
