@@ -209,7 +209,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  workingpapers:
+  research:
     output: true
     permalink: /:collection/:path/
   teaching:
