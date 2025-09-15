@@ -1,5 +1,5 @@
 ---
-title: "Unveiling Autocratic Elite Networks Using Large Language Models (LLMs)"
+title: "Unveiling Elite Networks Using Large Language Models (LLMs)"
 collection: workingpapers
 category: manuscripts
 permalink: /workingpapers/2025-llm-ie-elitenet
