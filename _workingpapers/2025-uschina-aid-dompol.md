@@ -1,6 +1,6 @@
 ---
 title: "Racing for Influence: US-China Foreign Aid Competition and Domestic Politics of Recipient States"
-collection: publications
+collection: workingpapers
 category: manuscripts
 # permalink: #/publication/2025-USChina-Aid-DomPol
 excerpt: 'An examination of the dynamics of US-China foreign aid competition and domestic politics of the recipient states'
