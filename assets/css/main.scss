@@ -39,3 +39,55 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+/* === Custom Fonts: Playfair Display (headings) + Raleway (body) === */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #111;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+  h4, h5, h6 { font-size: 1rem; }
+}
