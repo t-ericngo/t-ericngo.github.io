@@ -19,19 +19,19 @@ A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_202
 
 
 ### Work experience
-* 08/2021 - 12/2024: Graduate Teaching Assistant, *University of Iowa*
+* **Graduate Teaching Assistant**, *University of Iowa* (08/2021 - 12/2024)
   * Instructed a total of 20 small classes under 4 professors in International Relations, Comparative Politics, and US Foreign Policy.
   * Implemented various active learning methods, including simulations, team-based learning, and project-based learning.
   * Guided and graded 70-90 students per semester on their weekly assignments, projects, and research essays.
   * Managed and monitored students’ grades and performance via Canvas system.
   * Supervisor: Prof. Brian Lai; Prof. Sara Mitchell; Prof. Fred Solt, Dr. Nick Martini,
 
-* 08/2023 - 05/2024: Editorial Assistant & Replication Analyst, *Foreign Policy Analysis (FPA) Journal*
+* **Editorial Assistant & Replication Analyst**, *Foreign Policy Analysis (FPA) Journal* (08/2023 - 05/2024) 
   * Conducted data analysis to inspect results of accepted peer-reviewed articles at FPA using Stata, R, and Python.
   * Ensured timely communication between the authors and editorial team. 
   * Supervisor: Prof. Brian Lai
 
-* 08/2020 – 12/2020: Lead Consultant, *Truman State University*
+* **Lead Consultant**, *Truman State University*, (08/2020 – 12/2020) 
   * Led a 3-person team of consultants to help Truman State’s reforms in academic advising system by conducting a campus-wide survey and statistical analyses (in R) on students’ advising experience.
   * Delivered insights and policy recommendations via a presentation and 18-page report to Truman State authorities.
   * Supervisor: Prof. Scott Albert
