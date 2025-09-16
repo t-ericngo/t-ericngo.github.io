@@ -9,18 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-A more detailed Resume can be found here: https://drive.google.com/file/d/1DOywJyJeKieADj8XCaWj6kfnAFG2OEDN/view?usp=sharing
+A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_2025.07.14_CSS_US.pdf).
 
 
-Education
-======
+### Education
 * Ph.D Candidate in Political Science, University of Iowa, 2027 (expected)
 * M.A. in Political Science, University of Iowa, 2023
 * B.S. in Political Science & International Relations, Truman State University, 2021
 
 
-Work experience
-======
+### Work experience
 * 08/2021 - 12/2024: Graduate Teaching Assistant
   * University of Iowa
   * Duties:
@@ -30,7 +28,7 @@ Work experience
     * Managed and monitored students’ grades and performance via Canvas system.
   * Supervisor: Prof. Brian Lai; Prof. Sara Mitchell; Dr. Nick Martini
 
-* 08/2023 - 05/2024: Graduate Teaching Assistant
+* 08/2023 - 05/2024: Editorial Assistant & Replication Analyst
   * Foreign Policy Analysis (FPA) Journal
   * Duties:
     * Conducted data analysis to inspect results of accepted peer-reviewed articles at FPA using Stata, R, and Python.
@@ -45,42 +43,36 @@ Work experience
   * Supervisor: Prof. Scott Albert
 
   
-Skills
-======
+### Skills
 * **Research/Analytical:** Large Language Models (LLMs), Machine Learning, Text Analysis, Computational Social Science, Network Analysis, Econometrics, Advanced Statistics, Time Series, Archival Research
 * **Computer Software:** STATA, R, Python (Transformers, Llama, OpenAI API, Scikit-learn, NLTK, SpaCy), SPSS
 * **Languages:** Vietnamese (Native), English (Fluent), Japanese (Elementary)
 
 
-Working Papers
-======
+### Working Papers
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
-Talks
-======
+### Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
 
 
-Teaching
-======
+### Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
-Honors
-======
+### Honors
 * 04/2025: Outstanding Teaching Assistant Award ($1000), University of Iowa
 * 09/2024: Best Graduate Seminar Research Paper ($250), Department of Political Science, University of Iowa
 
 
-Scholarships & Grants
-======
+### Scholarships & Grants
 * 09/2025: Travel Award ($500), WhoGov Workshop on Political Elites, University of Oslo
 * 07/2025: PolMeth Travel & Accommodation Award ($700), Society for Political Methodology (Declined)
 * 06/2025: Travel & Accommodation Award ($6000), Swedish Research School in Computational Social Science
@@ -90,10 +82,8 @@ Scholarships & Grants
 * 08/2017: Truman State Presidential Scholarship ($36,000), Truman State University
 
 
-Service and leadership
-======
+### Service and leadership
 * 2024: Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa
 * 2023 – 2024: Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa
 * 2019 – 2020: President, Vietnamese Student Association (VSA), Truman State University
 * 2018 – 2019: Representative of the Student Government, Undergraduate Faculty Council, Truman State University
-
