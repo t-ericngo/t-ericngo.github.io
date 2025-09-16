@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am Eric Ngo, a PhD candidate in the Department of Political Science at the University of Iowa. You can also call me Tu or Anh-Tu (my Vietnamese name).
+Welcome! I am Eric Ngo, a PhD candidate in political science at the University of Iowa. You can also call me Tu or Anh-Tu (my Vietnamese name).
 
 My primary research interests lie at the nexus of international relations, foreign policy, comparative politics, and computational social science (CSS). In my ongoing dissertation project, I explore how networks of political elites influence constraints on the top leader, thereby shaping policy and political outcomes such as international conflict, repression, and elite in-fighting. To do this, I construct an original database of elite networks across countries and years, employing fine-tuned large language models (LLMs) to extract information about elites' biographies and relationships.
 
