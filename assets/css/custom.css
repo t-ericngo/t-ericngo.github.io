@@ -1,27 +1,27 @@
 /* Smaller page titles on archive pages like Research/Teaching */
 .layout--archive h1.page__title { 
-  font-size: 1.5rem;           /* was ~2.6rem */
-  line-height: 1.25;
+  font-size: 1.45rem;           /* was ~2.6rem */
+  line-height: 1.35;
 }
 
 /* 
 /* Make H2 titles (like working paper titles) smaller */
 .page__content h2 {
   font-size: 1.2em;   /* adjust as needed */
-  line-height: 1.4;
+  line-height: 1.2;
 }
  */
 
 /* If they are H3 */
 .page__content h3 {
-  font-size: 1.0em;
-  line-height: 1.3;
+  font-size: 1em;
+  line-height: 1.2;
 }
 
 /* Smaller item titles (working papers, courses, talks, publications lists) */
 .layout--archive .archive__item-title {
   font-size: 1rem;          /* tweak to taste: 1.0–1.1rem */
-  line-height: 1.35;
+  line-height: 1.2;
   margin-bottom: 0.15rem;
   font-weight: 500;      /* adjust boldness */
 }
@@ -29,7 +29,7 @@
 /* Optional: slightly smaller excerpts under each item */
 .layout--archive .archive__item-excerpt {
   font-size: 0.95rem;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 /* Optional: subheadings within the page content (e.g., "Working Papers") */
@@ -40,7 +40,7 @@
 
 /* Single item pages (e.g., a working paper detail): tone down the big H1 */
 .layout--single h1.page__title {
-  font-size: 1.4rem;           /* tweak to taste */
+  font-size: 1rem;           /* tweak to taste */
   line-height: 1.2;
 }
 
