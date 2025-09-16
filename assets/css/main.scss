@@ -41,53 +41,73 @@
 @import "print";
 
 
-/* === Custom Fonts: Playfair Display (headings) + Raleway (body) === */
-
-body {
+/* ===== Body font options ===== */
+.body-raleway {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: #333;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.0rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
-  color: #111;
-}
-
-h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
-  color: #222;
-}
-
-h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  font-weight: 500;
+.body-lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
   color: #333;
 }
 
-/* Mobile adjustments */
+/* ===== Heading font: Playfair ===== */
+.heading-playfair h1,
+.heading-playfair h2,
+.heading-playfair h3,
+.heading-playfair h4,
+.heading-playfair h5,
+.heading-playfair h6 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.25;
+}
+
+.heading-playfair h1 { font-size: 2.0rem; }
+.heading-playfair h2 { font-size: 1.6rem; }
+.heading-playfair h3 { font-size: 1.3rem; }
+.heading-playfair h4,
+.heading-playfair h5,
+.heading-playfair h6 { font-size: 1.1rem; }
+
+/* ===== Heading font: Poppins ===== */
+.heading-poppins h1,
+.heading-poppins h2,
+.heading-poppins h3,
+.heading-poppins h4,
+.heading-poppins h5,
+.heading-poppins h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.heading-poppins h1 { font-size: 1.9rem; }
+.heading-poppins h2 { font-size: 1.5rem; letter-spacing: 0.02em; }
+.heading-poppins h3 { font-size: 1.2rem; }
+.heading-poppins h4,
+.heading-poppins h5,
+.heading-poppins h6 { font-size: 1.05rem; }
+
+/* ===== Mobile adjustments (≤ 768px) ===== */
 @media (max-width: 768px) {
-  body { font-size: 14px; }
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.3rem; }
-  h3 { font-size: 1.1rem; }
-  h4, h5, h6 { font-size: 1rem; }
+  .body-raleway, .body-lato { font-size: 14px; }
+
+  .heading-playfair h1 { font-size: 1.6rem; }
+  .heading-playfair h2 { font-size: 1.3rem; }
+  .heading-playfair h3 { font-size: 1.1rem; }
+  .heading-playfair h4,
+  .heading-playfair h5,
+  .heading-playfair h6 { font-size: 1.0rem; }
+
+  .heading-poppins h1 { font-size: 1.55rem; }
+  .heading-poppins h2 { font-size: 1.25rem; }
+  .heading-poppins h3 { font-size: 1.05rem; }
+  .heading-poppins h4,
+  .heading-poppins h5,
+  .heading-poppins h6 { font-size: 0.98rem; }
 }
