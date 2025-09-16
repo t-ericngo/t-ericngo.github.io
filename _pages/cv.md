@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_2025.07.14_CSS_US.pdf).
+A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_2025.09.16_CSS_US.pdf).
 
 
 ### Education
