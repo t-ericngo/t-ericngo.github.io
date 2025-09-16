@@ -50,7 +50,7 @@ A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_202
 
 
 ### Working Papers
-  <ul>{% for post in site.publications reversed %}
+  <ul>{% for post in site.workingpapers reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
