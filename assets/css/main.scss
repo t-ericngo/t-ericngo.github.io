@@ -67,12 +67,12 @@
   line-height: 1.25;
 }
 
-.heading-playfair h1 { font-size: 1.6rem; }
-.heading-playfair h2 { font-size: 1.2rem; }
-.heading-playfair h3 { font-size: 1rem; }
+.heading-playfair h1 { font-size: 1.5rem; }
+.heading-playfair h2 { font-size: 1.1rem; }
+.heading-playfair h3 { font-size: 0.9rem; }
 .heading-playfair h4,
 .heading-playfair h5,
-.heading-playfair h6 { font-size: 0.8rem; }
+.heading-playfair h6 { font-size: 0.7rem; }
 
 /* ===== Heading font: Poppins ===== */
 .heading-poppins h1,
@@ -86,28 +86,28 @@
   line-height: 1.25;
 }
 
-.heading-poppins h1 { font-size: 1.5rem; }
-.heading-poppins h2 { font-size: 1.1rem; letter-spacing: 0.02em; }
-.heading-poppins h3 { font-size: 0.9rem; }
+.heading-poppins h1 { font-size: 1.4rem; }
+.heading-poppins h2 { font-size: 1rem; letter-spacing: 0.02em; }
+.heading-poppins h3 { font-size: 0.8rem; }
 .heading-poppins h4,
 .heading-poppins h5,
-.heading-poppins h6 { font-size: 0.8rem; }
+.heading-poppins h6 { font-size: 0.6rem; }
 
 /* ===== Mobile adjustments (≤ 768px) ===== */
 @media (max-width: 768px) {
   .body-raleway, .body-lato { font-size: 14px; }
 
-  .heading-playfair h1 { font-size: 1.6rem; }
-  .heading-playfair h2 { font-size: 1.3rem; }
-  .heading-playfair h3 { font-size: 1.1rem; }
+  .heading-playfair h1 { font-size: 1.4rem; }
+  .heading-playfair h2 { font-size: 1.1rem; }
+  .heading-playfair h3 { font-size: 1rem; }
   .heading-playfair h4,
   .heading-playfair h5,
-  .heading-playfair h6 { font-size: 1.0rem; }
+  .heading-playfair h6 { font-size: 0.8rem; }
 
-  .heading-poppins h1 { font-size: 1.45rem; }
-  .heading-poppins h2 { font-size: 1.15rem; }
-  .heading-poppins h3 { font-size: 0.9rem; }
+  .heading-poppins h1 { font-size: 1.35rem; }
+  .heading-poppins h2 { font-size: 1.05rem; }
+  .heading-poppins h3 { font-size: 0.8rem; }
   .heading-poppins h4,
   .heading-poppins h5,
-  .heading-poppins h6 { font-size: 0.8rem; }
+  .heading-poppins h6 { font-size: 0.7rem; }
 }
