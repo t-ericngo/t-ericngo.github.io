@@ -1,3 +1,13 @@
+/* SMOKE TEST – remove after confirming */
+body::before {
+  content: "✔ custom.css loaded";
+  position: fixed; top: 6px; left: 6px; padding: 4px 6px;
+  background: #000; color: #fff; font: 12px/1.2 system-ui;
+  z-index: 99999;
+}
+
+
+/* 
 /* Smaller page titles on archive pages like Research/Teaching */
 .layout--archive .page__title { 
   font-size: 1.6rem;           /* was ~2.6rem */
@@ -34,4 +44,5 @@
   .layout--archive .page__title { font-size: 1.4rem; }
   .layout--archive .archive__item-title { font-size: 0.98rem; }
   .layout--single  .page__title { font-size: 1.6rem; }
-}
+} 
+*/
