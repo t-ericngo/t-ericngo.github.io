@@ -12,7 +12,7 @@ title                    : "T. Eric Ngo"
 title_separator          : "-"
 name                     : &name "Eric Ngo"
 description              : &description "PhD candidate at the University of Iowa"
-url                      : https://t-ericngo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://t-ericngo.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "t-ericngo/t-ericngo.github.io"
 
