@@ -4,11 +4,13 @@
   line-height: 1.25;
 }
 
+/* 
 /* Make H2 titles (like working paper titles) smaller */
 .page__content h2 {
   font-size: 1.2em;   /* adjust as needed */
   line-height: 1.4;
 }
+ */
 
 /* If they are H3 */
 .page__content h3 {
@@ -38,7 +40,7 @@
 
 /* Single item pages (e.g., a working paper detail): tone down the big H1 */
 .layout--single h1.page__title {
-  font-size: 1.7rem;           /* tweak to taste */
+  font-size: 1.5rem;           /* tweak to taste */
   line-height: 1.2;
 }
 
