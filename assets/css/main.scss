@@ -111,3 +111,9 @@
   .heading-poppins h5,
   .heading-poppins h6 { font-size: 0.7rem; }
 }
+
+/* ===== Make All Text Justified (Site-Wide) ===== */
+.page__content {
+  text-align: justify;
+  hyphens: auto;
+}
