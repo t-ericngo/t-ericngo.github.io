@@ -40,7 +40,7 @@
 
 /* Single item pages (e.g., a working paper detail): tone down the big H1 */
 .layout--single h1.page__title {
-  font-size: 1.5rem;           /* tweak to taste */
+  font-size: 1.4rem;           /* tweak to taste */
   line-height: 1.2;
 }
 
