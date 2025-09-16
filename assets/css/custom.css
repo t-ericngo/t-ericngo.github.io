@@ -4,11 +4,24 @@
   line-height: 1.25;
 }
 
+/* Make H2 titles (like working paper titles) smaller */
+.page__content h2 {
+  font-size: 1.2em;   /* adjust as needed */
+  line-height: 1.4;
+}
+
+/* If they are H3 */
+.page__content h3 {
+  font-size: 1.0em;
+  line-height: 1.3;
+}
+
 /* Smaller item titles (working papers, courses, talks, publications lists) */
-.layout--archive h2.archive__item-title {
+.layout--archive .archive__item-title {
   font-size: 1rem;          /* tweak to taste: 1.0–1.1rem */
   line-height: 1.35;
   margin-bottom: 0.15rem;
+  font-weight: 500;      /* adjust boldness */
 }
 
 /* Optional: slightly smaller excerpts under each item */
