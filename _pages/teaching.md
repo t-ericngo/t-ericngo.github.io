@@ -2,6 +2,7 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
+description: "Teaching experiences of T. Eric Ngo in international relations, foreign policy, and comparative politics."
 author_profile: true
 ---
 ## Courses
