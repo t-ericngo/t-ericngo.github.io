@@ -19,7 +19,7 @@ Methodologically, I adopt a mixed-method approach to studying social phenomenon,
 
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
-I am a proud native of Vietnam. Coming from a central province of Vietnam and now residing in the US's Midwest, I am seemingly fated to the middle and agricultural region of wherever I live (funny enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
+I am a proud native of Vietnam. I also seem fated to stick with the middle regions - coming from a central province of Vietnam and now studying in the US Midwest (funny enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
 
 Besides doing political sciency things, I love to read, work out, travel, and occasionally pretend to be a guitar player.
 
