@@ -15,7 +15,7 @@ More broadly, I am interested in the interplay between domestic and internationa
 
 Methodologically, I adopt a mixed-method approach to studying social phenomenon, combining quantitative cross-sectional time-series techniques with qualitative archive studies and interviews. I can implement methods such as generalized linear models, time-series analysis, and network analysis in Stata, R, and Python. I am also a cautious enthusiast of careful and ethical applications of computational methods, specifically LLMs, AI, and machine learning, to solving data challenges in social sciences.
 
-### My background
+## My background
 
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
