@@ -63,22 +63,22 @@ A more detailed Resume can be found [here]({{site.url}}/files/NgoEric_Resume_202
 
 
 ### Honors
-* 04/2025: Outstanding Teaching Assistant Award ($1000), University of Iowa
-* 09/2024: Best Graduate Seminar Research Paper ($250), Department of Political Science, University of Iowa
+* Outstanding Teaching Assistant Award ($1000), University of Iowa, *04/2025*
+* Best Graduate Seminar Research Paper ($250), Department of Political Science, University of Iowa, *09/2024*
 
 
 ### Scholarships & Grants
-* 09/2025: Travel Award ($500), WhoGov Workshop on Political Elites, University of Oslo
-* 07/2025: PolMeth Travel & Accommodation Award ($700), Society for Political Methodology (Declined)
-* 06/2025: Travel & Accommodation Award ($6000), Swedish Research School in Computational Social Science
-* 02/2025: Post-Comprehensive Exam Research Fellowship ($11,000), Graduate College, University of Iowa
-* 08/2021: Iowa Recruitment Fellowship ($45,000), Graduate College, University of Iowa
-* 06/2020: Grants-in-Aid of Scholarship and Research ($1500), Truman State University
-* 08/2017: Truman State Presidential Scholarship ($36,000), Truman State University
+* Travel Award ($500), WhoGov Workshop on Political Elites, University of Oslo, *09/2025*
+* PolMeth Travel & Accommodation Award ($700), Society for Political Methodology (Declined), *07/2025*
+* Travel & Accommodation Award ($6000), Swedish Research School in Computational Social Science, *06/2025*
+* Post-Comprehensive Exam Research Fellowship ($11,000), Graduate College, University of Iowa, *02/2025*
+* Iowa Recruitment Fellowship ($45,000), Graduate College, University of Iowa, *08/2021*
+* Grants-in-Aid of Scholarship and Research ($1500), Truman State University, *06/2020*
+* Truman State Presidential Scholarship ($36,000), Truman State University, *08/2017*
 
 
 ### Service and leadership
-* 2024: Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa
-* 2023 – 2024: Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa
-* 2019 – 2020: President, Vietnamese Student Association (VSA), Truman State University
-* 2018 – 2019: Representative of the Student Government, Undergraduate Faculty Council, Truman State University
+* Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa, *2024*
+* Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa, *2023 – 2024*
+* President, Vietnamese Student Association (VSA), Truman State University, *2019 – 2020*
+* Representative of the Student Government, Undergraduate Faculty Council, Truman State University, *2018 – 2019*
