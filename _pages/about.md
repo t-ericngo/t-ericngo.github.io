@@ -15,12 +15,12 @@ More broadly, I am interested in the interplay between domestic and internationa
 
 Methodologically, I adopt a mixed-method approach to studying social phenomenon, combining quantitative cross-sectional time-series techniques with qualitative archive studies and interviews. I can implement methods such as generalized linear models, time-series analysis, and network analysis in Stata, R, and Python. I am also a cautious enthusiast of careful and ethical applications of computational methods, specifically LLMs, AI, and machine learning, to solving data challenges in social sciences.
 
-## My background
+### My background
 
 I received my M.A. from the Department of Political Science at the University of Iowa in 2023. Before Iowa, I earned my B.S. in Political Science and International Relations at Truman State University, Missouri, in 2021.
 
 I am a proud native of Vietnam. Coming from a central province of Vietnam and now residing in the US's Midwest, I am seemingly fated to the middle and agricultural region of wherever I live (funny enough, my surname in Vietnamese means "corn", a major agricultural product of Iowa and Missouri). 
 
-Besides doing political sciency things, I love to read, binge-watch TV shows, work out, travel, and occasionally pretend to be a guitar player.
+Besides doing political sciency things, I love to read, work out, travel, and occasionally pretend to be a guitar player.
 
 Feel free to reach me via my email ([tu-ngo@uiowa.edu](tu-ngo@uiowa.edu)).
