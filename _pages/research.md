@@ -2,6 +2,7 @@
 layout: archive
 title: "Research"
 permalink: /research/
+description: "Working papers and publications on international relations, conflict, authoritarian politics, political elites, and applications of large language models (LLMs) in social science."
 author_profile: true
 ---
 
