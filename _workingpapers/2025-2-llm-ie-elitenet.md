@@ -3,7 +3,7 @@ layout: single
 title: "Unveiling Elite Networks Using Large Language Models (LLMs)"
 collection: workingpapers
 category: manuscripts
-permalink: /_workingpapers/2025-llm-ie-elitenet/
+permalink: /workingpapers/2025-llm-ie-elitenet/
 excerpt: 'A new framework of automated text-to-network pipeline using LLMs.'
 author_profile: true
 # venue: 'GitHub Journal of Bugs'
