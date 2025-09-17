@@ -2,6 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+description: "Complete CV of T. Eric Ngo"
 author_profile: true
 redirect_from:
   - /resume
