@@ -78,12 +78,12 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 
 
 ### Service and leadership
-### *Professional*
+#### *Professional*
 * Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa, *2024*
 * Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa, *2023 – 2024*
 * Peer-Reviewer, Foreign Policy Analysis (FPA) Journal, *2024*
 
-### *Other*
+#### *Other*
 * President, Vietnamese Student Association (VSA), Truman State University, *2019 – 2020*
 * Representative of the Student Government, Undergraduate Faculty Council, Truman State University, *2018 – 2019*
 * Academic Affairs Committee, Student Government, Truman State University, *2018-2019*
