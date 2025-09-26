@@ -13,13 +13,17 @@ redirect_from:
 A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resume_2025.09.16_CSS_US.pdf).
 
 
-### Education
+## Education
 * Ph.D Candidate in Political Science, University of Iowa, 2027 (expected)
 * M.A. in Political Science, University of Iowa, 2023
 * B.S. in Political Science & International Relations, Truman State University, 2021
 
+### Additional Training
+* Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, 2025 - 2026  
+  * Summer Institute in Computational Social Science (SICSS), Linköping University, 2025 
 
-### Work experience
+
+## Work experience
 * **Graduate Teaching Assistant**, University of Iowa, *08/2021 - 12/2024*
   * Instructed a total of 20 small classes under 4 professors in International Relations, Comparative Politics, and US Foreign Policy.
   * Implemented various active learning methods, including simulations, team-based learning, and project-based learning.
@@ -38,36 +42,36 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
   * Supervisor: Prof. Scott Albert
 
   
-### Skills
+## Skills
 * **Research/Analytical:** Large Language Models (LLMs), Machine Learning, Text Analysis, Computational Social Science, Network Analysis, Econometrics, Advanced Statistics, Time Series, Archival Research
 * **Computer Software:** STATA, R, Python (Transformers, Llama, OpenAI API, Scikit-learn, NLTK, SpaCy), SPSS
 * **Languages:** Vietnamese (Native), English (Fluent), Japanese (Elementary)
 
 
-### Working Papers
+## Working Papers
   <ul>{% for post in site.workingpapers reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
-### Talks
+## Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
 
 
-### Teaching
+## Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
-### Honors
+## Honors
 * Outstanding Teaching Assistant Award ($1000), University of Iowa, *04/2025*
 * Best Graduate Seminar Research Paper ($250), Department of Political Science, University of Iowa, *09/2024*
 
 
-### Scholarships & Grants
+## Scholarships & Grants
 * Travel Award ($500), WhoGov Workshop on Political Elites, University of Oslo, *09/2025*
 * PolMeth Travel & Accommodation Award ($700), Society for Political Methodology (Declined), *07/2025*
 * Travel & Accommodation Award ($6000), Swedish Research School in Computational Social Science, *06/2025*
@@ -77,13 +81,13 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 * Truman State Presidential Scholarship ($36,000), Truman State University, *08/2017*
 
 
-### Service and leadership
-#### *Professional*
+## Service and leadership
+### *Professional*
 * Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa, *2024*
 * Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa, *2023 – 2024*
 * Peer-Reviewer, Foreign Policy Analysis (FPA) Journal, *2024*
 
-#### *Other*
+### *Other*
 * President, Vietnamese Student Association (VSA), Truman State University, *2019 – 2020*
 * Representative of the Student Government, Undergraduate Faculty Council, Truman State University, *2018 – 2019*
 * Academic Affairs Committee, Student Government, Truman State University, *2018-2019*
