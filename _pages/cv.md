@@ -14,12 +14,12 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 
 
 ## Education
-* Ph.D Candidate in Political Science, University of Iowa, 2027 (expected)
-* M.A. in Political Science, University of Iowa, 2023
-* B.S. in Political Science & International Relations, Truman State University, 2021
+* Ph.D Candidate in Political Science, University of Iowa, USA, 2027 (expected)
+* M.A. in Political Science, University of Iowa, USA, 2023
+* B.S. in Political Science & International Relations, Truman State University, USA, 2021
 
 ### Additional Training
-* Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, 2025 - 2026  
+* Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, Sweden, 2025 - 2026  
   * Summer Institute in Computational Social Science (SICSS), Linköping University, 2025 
 
 
@@ -29,7 +29,7 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
   * Implemented various active learning methods, including simulations, team-based learning, and project-based learning.
   * Guided and graded 70-90 students per semester on their weekly assignments, projects, and research essays.
   * Managed and monitored students’ grades and performance via Canvas system.
-  * Supervisor: Prof. Brian Lai; Prof. Sara Mitchell; Prof. Fred Solt, Dr. Nick Martini,
+  * Supervisor: Prof. Brian Lai; Prof. Sara Mitchell; Prof. Fred Solt, Prof. Kelly Kadera, and Dr. Nick Martini
 
 * **Editorial Assistant & Replication Analyst**, Foreign Policy Analysis (FPA) Journal, *08/2023 - 05/2024*
   * Conducted data analysis to inspect & replicate results of accepted peer-reviewed articles at FPA using Stata, R, and Python.
