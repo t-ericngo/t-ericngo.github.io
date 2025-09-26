@@ -14,13 +14,13 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 
 
 ## Education
-* Ph.D Candidate in Political Science, University of Iowa, USA, 2027 (expected)
-* M.A. in Political Science, University of Iowa, USA, 2023
-* B.S. in Political Science & International Relations, Truman State University, USA, 2021
+* Ph.D Candidate in Political Science, University of Iowa, USA, *2027 (expected)*
+* M.A. in Political Science, University of Iowa, USA, *2023*
+* B.S. in Political Science & International Relations, Truman State University, USA, *2021*
 
-### *Additional Training*
-* Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, Sweden, 2025 - 2026  
-  * Summer Institute in Computational Social Science (SICSS), Linköping University, 2025 
+### Additional Training
+* Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, Sweden, *2025 - 2026*
+  * Summer Institute in Computational Social Science (SICSS), IAS, *2025* 
 
 
 ## Work experience
@@ -82,12 +82,12 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 
 
 ## Service and leadership
-### *Professional*
+### Professional
 * Graduate Student Representative, IR Faculty Recruitment Committee, Department of Political Science, University of Iowa, *2024*
 * Co-Coordinator, International Relations (IR) Workshop Series, Department of Political Science, University of Iowa, *2023 – 2024*
 * Peer-Reviewer, Foreign Policy Analysis (FPA) Journal, *2024*
 
-### *Other*
+### Other
 * President, Vietnamese Student Association (VSA), Truman State University, *2019 – 2020*
 * Representative of the Student Government, Undergraduate Faculty Council, Truman State University, *2018 – 2019*
 * Academic Affairs Committee, Student Government, Truman State University, *2018-2019*
