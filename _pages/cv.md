@@ -18,7 +18,7 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
 * M.A. in Political Science, University of Iowa, USA, 2023
 * B.S. in Political Science & International Relations, Truman State University, USA, 2021
 
-### Additional Training
+### *Additional Training*
 * Swedish Interdisciplinary Research School in Computational Social Science, Institute of Analytical Sociology (IAS), Linköping University, Sweden, 2025 - 2026  
   * Summer Institute in Computational Social Science (SICSS), Linköping University, 2025 
 
@@ -41,7 +41,7 @@ A PDF version of my resumé can be found [here]({{site.url}}/files/NgoEric_Resum
   * Delivered insights and policy recommendations via a presentation and 18-page report to Truman State authorities.
   * Supervisor: Prof. Scott Albert
 
-  
+
 ## Skills
 * **Research/Analytical:** Large Language Models (LLMs), Machine Learning, Text Analysis, Computational Social Science, Network Analysis, Econometrics, Advanced Statistics, Time Series, Archival Research
 * **Computer Software:** STATA, R, Python (Transformers, Llama, OpenAI API, Scikit-learn, NLTK, SpaCy), SPSS
