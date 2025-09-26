@@ -117,3 +117,8 @@
   text-align: justify;
   // hyphens: auto;
 }
+
+/* ===== Reduce spacing between h1 and h3 ===== */
+h1 + h3 {
+  margin-top: 0.5rem;   // adjust this value until spacing looks right
+}
