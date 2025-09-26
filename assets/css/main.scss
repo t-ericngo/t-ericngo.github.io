@@ -118,7 +118,17 @@
   // hyphens: auto;
 }
 
-/* ===== Reduce spacing between h1 and h3 ===== */
-h1 + h3 {
-  margin-top: 0.5rem;   // adjust this value until spacing looks right
+/* ===== Reduce spacing for H1 and H3 ===== */
+.page__content h1 {
+  margin-top: 1rem;     // reduce from default (~2–3rem)
+  margin-bottom: 0.75rem;  // shrink the space below h1
+}
+
+.page__content h1 + h3 {
+  margin-top: 0.5rem;   // spacing between h1 and h3
+}
+
+.page__content h3 {
+  margin-top: 0.75rem;  // space above h3 in other cases
+  margin-bottom: 0.5rem;
 }
