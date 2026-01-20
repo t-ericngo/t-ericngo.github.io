@@ -4,7 +4,7 @@ layout: single
 title: "Dictators at Sea: Domestic Economic Conditions of Autocracies and the Militarization of Maritime Claims"
 collection: workingpapers
 category: manuscripts
-permalink: /workingpapers/2026-dictators-maritime/
+permalink: /workingpapers/dictators-maritime/
 author_profile: true
 excerpt: 'An analysis of how economic crisis and natural resources shape international maritime conflict .'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
