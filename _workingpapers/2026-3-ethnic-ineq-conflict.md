@@ -3,7 +3,7 @@ layout: archive
 title: "Us Versus Them: Ethnic Inequality, Diversionary Nationalism, and International Conflict"
 collection: workingpapers
 category: manuscripts
-permalink: /workingpapers/2025-ethnic-ineq-conflict/
+permalink: /workingpapers/ethnic-ineq-conflict/
 excerpt: 'An analysis of ethnic political inequality and diversionary conflict.'
 author_profile: true
 # venue: 'Revise & Resubmit'
