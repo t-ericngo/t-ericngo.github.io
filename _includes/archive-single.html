@@ -33,6 +33,16 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
+
+    {% if post.authors %}
+      <p class="page__meta" style="margin: 0.15em 0 0.5em;">
+        {{ post.authors | join: ", " }}
+      </p>
+    {% elsif post.author %}
+      <p class="page__meta" style="margin: 0.15em 0 0.5em;">
+        {{ post.author }}
+      </p>
+    {% endif %}
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
