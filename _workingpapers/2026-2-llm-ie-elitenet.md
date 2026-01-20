@@ -1,7 +1,7 @@
 ---
 layout: single
 authors:
-  - Eric Ngo
+  - T. Eric Ngo
 title: "Unveiling Elite Networks Using Large Language Models (LLMs)"
 collection: workingpapers
 category: manuscripts
