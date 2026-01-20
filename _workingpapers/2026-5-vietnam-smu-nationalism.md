@@ -3,12 +3,9 @@ layout: single
 title: "From Social Media Use to Political Actions: Nationalism, Patriotism, and Participation in Vietnam’s Digital Sphere"
 collection: workingpapers
 category: manuscripts
-permalink: /workingpapers/2026-vietnam-socialmedia-nationalism/
+permalink: /workingpapers/vietnam-nationalism-socialmedia/
+excerpt: 'A survey study of the interplay between nationalist sentiments, social media use, and political participation in Vietnam's digital sphere'
 author_profile: true
-excerpt: 'An survey study of nationalist sentiments, social media use, and political participation in Vietnam's digital sphere.'
-# slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-# citation: 'Your Name, You. (2025). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
 ### Abstract
