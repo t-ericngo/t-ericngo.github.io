@@ -1,5 +1,7 @@
 ---
 layout: single
+authors:
+  - T. Eric Ngo
 title: "Racing for Influence: US-China Foreign Aid Competition and Domestic Politics of Recipient States"
 collection: workingpapers
 category: manuscripts
