@@ -35,11 +35,11 @@
     </h3>
 
     {% if post.authors %}
-      <p class="page__meta" style="margin: 0.15em 0 0.5em;">
+      <p class="page__meta" >
         {{ post.authors | join: ", " }}
       </p>
     {% elsif post.author %}
-      <p class="page__meta" style="margin: 0.15em 0 0.5em;">
+      <p class="page__meta" >
         {{ post.author }}
       </p>
     {% endif %}
