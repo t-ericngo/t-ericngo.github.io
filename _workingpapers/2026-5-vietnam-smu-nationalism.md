@@ -1,5 +1,4 @@
 ---
-
 layout: single
 title: "From Social Media Use to Political Actions: Nationalism, Patriotism, and Participation in Vietnam’s Digital Sphere"
 collection: workingpapers
