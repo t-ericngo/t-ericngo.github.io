@@ -1,5 +1,11 @@
 ---
 layout: single
+authors:
+  - Giao Nguyen
+  - Uyen-Nhi Tran-Le
+  - My H. Nguyen
+  - T. Eric Ngo
+  - Thai Nguyen
 title: "From Social Media Use to Political Actions: Nationalism, Patriotism, and Participation in Vietnam’s Digital Sphere"
 collection: workingpapers
 category: manuscripts
