@@ -11,6 +11,8 @@ authors:
 venue: "Journal of Information Technology & Politics"
 year: 2026
 link: "https://doi.org/10.1080/19331681.2026.2745720"
+pdf: "/files/papers/Nguyen_et_al_2026_JITP_Facebook_Nationalism_Vietnam.pdf"   # open access (CC BY 4.0), so the published PDF can be posted
+replication: "https://osf.io/w3cbg/overview?view_only=2163ab8f77054463ab7ed2e1df2f9f39"
 open_access: true
 ---
 
