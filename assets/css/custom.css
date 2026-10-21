@@ -36,8 +36,21 @@
   color: var(--accent);
 }
 
-.author__avatar img {
-  border-radius: 18px;
+.author__avatar img {          /* round photo, cropped to a square around the face */
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+@media (min-width: 925px) {    /* desktop sidebar: 150px circle with a thin ring */
+  .author__avatar img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    padding: 3px;
+    border: 1px solid #dfe4e6;
+  }
 }
 
 .author__name {
@@ -78,7 +91,7 @@
 
 /* Small note under a page title (e.g. Research page) */
 .page__lead-note {
-  font-size: 0.85rem;
+  font-size: 14.5px;
   color: var(--muted);
   margin: -0.5rem 0 0.5rem;
 }
@@ -91,12 +104,12 @@
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {   /* small-caps section labels */
+.entry-section .entry-section__title {   /* small-caps section labels: above the 15.5px titles */
   margin: 2.2rem 0 0.25rem;
   padding-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 15.6px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
   border-bottom: 0;
@@ -203,10 +216,10 @@
   background: #f1ecf9;
 }
 
-.entry__panel {
+.entry__panel {               /* abstract / summary text: 14.5px, 1px below the 15.5px titles */
   margin-top: 0.7rem;
   padding: 0.8rem 1rem;
-  font-size: 0.85rem;
+  font-size: 14.5px;
   line-height: 1.6;
   text-align: left;
   color: #333;
@@ -259,7 +272,7 @@
 
 .interests__group p {
   margin: 0 0 0.45rem;
-  font-size: 0.8rem;
+  font-size: 14.5px;
   line-height: 1.5;
   color: #444;
 }
@@ -275,7 +288,7 @@
 .interests__sublist {
   margin: 0;
   padding-left: 1.1rem;
-  font-size: 0.8rem;
+  font-size: 14.5px;
   line-height: 1.5;
   color: #444;
 }
@@ -415,4 +428,22 @@
 
 .entry__panel p {
   color: #333;
+}
+
+/* ==========================================================================
+   Phones (< 768px): the theme's base size drops from 18px to 16px, which would
+   make rem-based entry text too small, so these sizes are set directly.
+   Hierarchy: section label 15px (caps) ≥ title 15px > abstract 14px > subtitle (author/venue/date line) 13px.
+   ========================================================================== */
+@media (max-width: 767px) {
+  .entry .entry__title { font-size: 15px; }
+  .entry__authors,
+  .entry__meta { font-size: 13px; }          /* subtitles */
+  .entry-section .entry-section__title { font-size: 15px; }
+  .entry__panel { font-size: 14px; }
+  .entry-btn { font-size: 12.5px; }
+  .page__lead-note { font-size: 14px; }
+  .interests .interests__group h3 { font-size: 15px; }
+  .interests__group p,
+  .interests__sublist { font-size: 13.5px; }
 }
