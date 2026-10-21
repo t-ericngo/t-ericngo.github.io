@@ -104,12 +104,12 @@
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {   /* small-caps section labels */
+.entry-section .entry-section__title {   /* small-caps section labels: above the 15.5px titles */
   margin: 2.2rem 0 0.25rem;
   padding-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
   border-bottom: 0;
@@ -433,13 +433,13 @@
 /* ==========================================================================
    Phones (< 768px): the theme's base size drops from 18px to 16px, which would
    make rem-based entry text too small, so these sizes are set directly.
-   Hierarchy: title 15px > abstract 14px > subtitle (author/venue/date line) 13px.
+   Hierarchy: section label 15px (caps) ≥ title 15px > abstract 14px > subtitle (author/venue/date line) 13px.
    ========================================================================== */
 @media (max-width: 767px) {
   .entry .entry__title { font-size: 15px; }
   .entry__authors,
   .entry__meta { font-size: 13px; }          /* subtitles */
-  .entry-section .entry-section__title { font-size: 13px; }
+  .entry-section .entry-section__title { font-size: 15px; }
   .entry__panel { font-size: 14px; }
   .entry-btn { font-size: 12.5px; }
   .page__lead-note { font-size: 14px; }
