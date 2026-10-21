@@ -1,17 +1,53 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Presentations"
 permalink: /talks/
-description: "Talks and presentations of Eric Ngo's research on international conflict, foreign policy, domestic politics, and applications of LLMs in social sciences."
+description: "Conference presentations and invited talks by T. Eric Ngo on international conflict, foreign policy, elite networks, US-China competition, and applications of LLMs in social science."
 author_profile: true
 ---
-
+{% comment %}
+  Entries live in _talks/ (one file per talk), newest first, grouped by year.
+  See _talks/2027-01-15-taureau-ai.md for the list of fields.
+{% endcomment %}
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+<p class="page__lead-note"><a href="{{ '/talkmap.html' | relative_url }}">See a map of all the places I've given a talk!</a></p>
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign now = site.time | date: "%s" | plus: 0 %}
+{% assign talks = site.talks | sort: "date" | reverse %}
+{% assign years = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
+{% for year in years %}
+<section class="entry-section">
+  <h2 class="entry-section__title">{{ year.name }}</h2>
+  {% for t in year.items %}
+    {% assign when = t.date | date: "%B %Y" %}
+    {% assign t_time = t.date | date: "%s" | plus: 0 %}
+
+    {% comment %} Headline: the title, or the venue when no title is given {% endcomment %}
+    {% if t.title and t.title != "" %}
+      {% assign headline = t.title %}
+      {% assign meta_parts = t.type | append: "|" | append: t.venue | append: "|" | append: t.location | append: "|" | append: when | split: "|" %}
+    {% else %}
+      {% assign headline = t.venue %}
+      {% assign meta_parts = t.type | append: "|" | append: t.location | append: "|" | append: when | split: "|" %}
+    {% endif %}
+    {% assign meta = "" %}
+    {% for p in meta_parts %}{% if p != "" %}{% if meta != "" %}{% assign meta = meta | append: " · " %}{% endif %}{% assign meta = meta | append: p %}{% endif %}{% endfor %}
+
+    {% comment %} Abstract: the talk's own text, else the linked paper's abstract {% endcomment %}
+    {% assign abstract = t.content | strip %}
+    {% if abstract == "" and t.paper and t.paper != "" %}
+      {% assign paper = site.research | where: "slug", t.paper | first %}
+      {% if paper %}{% assign abstract = paper.content | strip %}{% endif %}
+    {% endif %}
+
+    {% assign tag_list = "" %}
+    {% if t_time > now %}{% assign tag_list = tag_list | append: "Upcoming|" %}{% endif %}
+    {% if t.invited %}{% assign tag_list = tag_list | append: "Invited|" %}{% endif %}
+    {% if tag_list != "" %}{% assign tags = tag_list | split: "|" %}{% else %}{% assign tags = nil %}{% endif %}
+
+    {% assign tid = t.date | date: "%Y-%m-" | append: t.slug %}
+    {% include entry.html id=tid title=headline meta=meta panel=abstract panel_label="Abstract" slides=t.slides tags=tags %}
+  {% endfor %}
+</section>
 {% endfor %}
