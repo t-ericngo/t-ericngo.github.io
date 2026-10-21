@@ -32,16 +32,19 @@ authors:               # full author list; a single author shows no author line
   - Anh-Tu Ngo
 venue: ""              # journal (published papers)
 year:                  # year (published papers)
-link: ""               # DOI/article URL  -> "Link" button
-replication: ""        # Dataverse URL    -> "Replication Data" button
-code: ""               # GitHub/code URL  -> "GitHub" (or "Code") button
+link: ""               # DOI/article URL         -> "Link" button (every published paper)
+pdf: ""                # "/files/papers/x.pdf"   -> "PDF" button (optional)
+replication: ""        # Dataverse/OSF URL       -> "Replication Data" button (optional)
 open_access: false     # true -> "Open access" tag
 ---
-Abstract text…         # -> "Abstract" button (leave empty to hide it)
+Abstract text…         # -> "Abstract" button (every paper)
 ```
 
-When a paper is accepted, change `status` to `published` and fill in `venue`,
-`year`, and `link`. Buttons appear only for fields that are filled in.
+Every paper uses the same buttons, always in the same order: **Abstract, Link,
+PDF, Replication Data**. A button appears only when its field is filled in. To add
+a PDF, upload it to `files/papers/` (Add file → Upload files on GitHub) and set
+`pdf:` to its path. When a paper is accepted, change `status` to `published` and
+fill in `venue`, `year`, and `link`.
 
 **Add a talk.** Add `_talks/YYYY-MM-DD-short-name.md` with `title`, `type`, `venue`,
 `location`, and `date`. Use `paper: <file name in _research without .md>` to reuse a

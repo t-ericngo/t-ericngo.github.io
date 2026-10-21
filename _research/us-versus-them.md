@@ -6,12 +6,14 @@
 #   authors     : full author list in order; your own name (site.author.pub_name) is bolded.
 #                 Single-authored papers show no author line.
 #   venue, year : journal and year (published papers only)
-#   link        : article URL (DOI). Shows the "Link" button.
-#   replication : replication data URL (e.g., Dataverse). Shows the "Replication Data" button.
-#   code        : code repository URL. Shows a "GitHub" (or "Code") button.
+#   Buttons (always in this order; each shows only when its field is filled in):
+#   (abstract)  : the text below the second '---' -> "Abstract" button (every paper)
+#   link        : article URL (DOI) -> "Link" button (every published paper)
+#   pdf         : a PDF you upload to files/papers/ (e.g. "/files/papers/my-paper.pdf"),
+#                 or a full URL -> "PDF" button (optional)
+#   replication : replication data/code URL (e.g., Dataverse, OSF) -> "Replication Data" button (optional)
 #   open_access : true shows an "Open access" tag
-#   The text below the second '---' is the abstract (shows the "Abstract" button);
-#   leave it empty and the button is hidden. Fields left blank simply don't show.
+#   Fields left blank simply don't show.
 #   The file name (without .md) becomes the anchor: /research/#us-versus-them
 # ---------------------------------------------------------------------------
 title: "Us Versus Them: Ethnic Inequality, Diversionary Nationalism, and International Conflict"
@@ -22,8 +24,8 @@ authors:
 venue: "International Interactions"
 year: 2026
 link: "https://doi.org/10.1080/03050629.2026.2712372"
+pdf: ""
 replication: "https://www.tandfonline.com/doi/suppl/10.1080/03050629.2026.2712372?scroll=top"
-code: "https://github.com/t-ericngo/2026-ethnic-inequality-conflict"   # replication files (earlier version) on GitHub
 open_access: false
 ---
 
