@@ -315,11 +315,11 @@
   color: var(--accent);
 }
 
-/* Simple link list (Teaching awards & evaluations) */
+/* Simple link list (Teaching awards & evaluations): same size as abstracts and teaching interests */
 .plain-list {
   margin: 0.5rem 0 0;
   padding-left: 1.1rem;
-  font-size: 0.9rem;
+  font-size: 14.5px;
 }
 
 .plain-list li {
@@ -446,4 +446,5 @@
   .interests .interests__group h3 { font-size: 15px; }
   .interests__group p,
   .interests__sublist { font-size: 13.5px; }
+  .plain-list { font-size: 14px; }
 }
