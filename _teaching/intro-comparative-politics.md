@@ -5,4 +5,4 @@ order: 5
 meta: "Spring 2023 (virtual), Fall 2022"
 ---
 
-An introduction to the comparative study of political systems – states, regimes, institutions, and political participation – across countries. I led in-person discussion sections in Fall 2022 and virtual sections in Spring 2023, using discussion and group activities to help students compare political systems and apply course concepts to current events.
+An introduction to politics worldwide, across all regions and levels of development, covering regime types, political change, political culture and public opinion, government structures, state–society relations, electoral systems, and public policy. I ran in-person (Fall 2022) and virtual (Spring 2023) sections built around discussion and group activities, and graded students' assignments.

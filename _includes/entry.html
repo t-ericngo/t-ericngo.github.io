@@ -12,12 +12,14 @@
     panel         HTML/markdown text revealed by the toggle button
     panel_label   label of the toggle button ("Abstract", "Summary")
     replication   URL -> "Replication Data" button (new tab)
+    code          URL -> "GitHub" button (or "Code" for other hosts; new tab)
     link          URL -> "Link" button (new tab)
     slides        URL -> "Slides" button (new tab)
 {% endcomment %}
 {%- assign pubname = site.author.pub_name | default: site.author.name -%}
 {%- assign panel = include.panel | strip -%}
 {%- assign has_replication = false -%}{%- if include.replication and include.replication != "" -%}{%- assign has_replication = true -%}{%- endif -%}
+{%- assign has_code = false -%}{%- if include.code and include.code != "" -%}{%- assign has_code = true -%}{%- endif -%}
 {%- assign has_link = false -%}{%- if include.link and include.link != "" -%}{%- assign has_link = true -%}{%- endif -%}
 {%- assign has_slides = false -%}{%- if include.slides and include.slides != "" -%}{%- assign has_slides = true -%}{%- endif -%}
 {%- assign slides_url = include.slides -%}
@@ -38,13 +40,16 @@
   {%- if include.meta and include.meta != "" %}
   <p class="entry__meta">{{ include.meta }}</p>
   {%- endif %}
-  {%- if panel != "" or has_replication or has_link or has_slides or include.tags %}
+  {%- if panel != "" or has_replication or has_code or has_link or has_slides or include.tags %}
   <div class="entry__actions">
     {%- if panel != "" %}
     <button type="button" class="entry-btn" data-toggle-panel aria-expanded="false" aria-controls="{{ include.id }}-panel"><i class="fas fa-align-left" aria-hidden="true"></i> {{ include.panel_label | default: "Abstract" }}</button>
     {%- endif %}
     {%- if has_replication %}
     <a class="entry-btn" href="{{ include.replication }}" target="_blank" rel="noopener"><i class="fas fa-database" aria-hidden="true"></i> Replication Data</a>
+    {%- endif %}
+    {%- if has_code %}
+    <a class="entry-btn" href="{{ include.code }}" target="_blank" rel="noopener">{% if include.code contains "github.com" %}<i class="fab fa-github" aria-hidden="true"></i> GitHub{% else %}<i class="fas fa-code" aria-hidden="true"></i> Code{% endif %}</a>
     {%- endif %}
     {%- if has_link %}
     <a class="entry-btn" href="{{ include.link }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Link</a>

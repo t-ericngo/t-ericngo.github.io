@@ -5,4 +5,4 @@ order: 1
 meta: "Fall 2024, Spring 2022"
 ---
 
-An introductory survey of the major theories and questions of international politics, including war and peace, international cooperation and institutions, and the global economy. I led weekly discussion sections built around simulations and applied exercises – for example, a card game (adapted from Sara Mitchell's materials) in which students discover the bargaining model of war by deciding whether to fight, concede, or split the spoils, and an exercise analyzing countries' proposals for peace at the UN. Each activity ended with a debrief linking it back to theory, and I prepared review sessions that broke down difficult concepts before exams.
+A survey of key issues in international relations: the causes of war, competing theories of international relations, international organizations, and global environmental problems. I ran weekly discussion sections that applied these ideas through slides, group work, and simulations (such as a card game on the bargaining model of war), led exam reviews, and graded students' assignments.

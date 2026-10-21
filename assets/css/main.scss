@@ -41,93 +41,45 @@
 @import "print";
 
 
-/* ===== Body font options ===== */
-.body-raleway {
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
+/* ===== Typography: Inter ("Contemporary" style) =====
+   The font itself is loaded in _includes/head/custom.html, and $sans-serif in
+   _sass/_variables.scss makes Inter the default for the whole theme. */
+.body-inter {
+  font-family: "Inter", $sans-serif;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #1d2125;
 }
 
-.body-lato {
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* ===== Heading font: Playfair ===== */
-.heading-playfair h1,
-.heading-playfair h2,
-.heading-playfair h3,
-.heading-playfair h4,
-.heading-playfair h5,
-.heading-playfair h6 {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.25;
-}
-
-.heading-playfair h1 { font-size: 1.5rem; }
-.heading-playfair h2 { font-size: 1.1rem; }
-.heading-playfair h3 { font-size: 0.9rem; }
-.heading-playfair h4,
-.heading-playfair h5,
-.heading-playfair h6 { font-size: 0.7rem; }
-
-/* ===== Heading font: Poppins ===== */
-.heading-poppins h1,
-.heading-poppins h2,
-.heading-poppins h3,
-.heading-poppins h4,
-.heading-poppins h5,
-.heading-poppins h6 {
-  font-family: 'Poppins', sans-serif;
+.heading-inter h1,
+.heading-inter h2,
+.heading-inter h3,
+.heading-inter h4,
+.heading-inter h5,
+.heading-inter h6 {
+  font-family: "Inter", $sans-serif;
   font-weight: 600;
   line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
-.heading-poppins h1 { font-size: 1.4rem; }
-.heading-poppins h2 { font-size: 1rem; letter-spacing: 0.02em; }
-.heading-poppins h3 { font-size: 0.8rem; }
-.heading-poppins h4,
-.heading-poppins h5,
-.heading-poppins h6 { font-size: 0.6rem; }
+.heading-inter h1 { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; }
+.heading-inter h2 { font-size: 1.05rem; }
+.heading-inter h3 { font-size: 0.9rem; }
+.heading-inter h4,
+.heading-inter h5,
+.heading-inter h6 { font-size: 0.75rem; }
 
 /* ===== Mobile adjustments (≤ 768px) ===== */
 @media (max-width: 768px) {
-  .body-raleway, .body-lato { font-size: 14px; }
-
-  .heading-playfair h1 { font-size: 1.4rem; }
-  .heading-playfair h2 { font-size: 1.1rem; }
-  .heading-playfair h3 { font-size: 1rem; }
-  .heading-playfair h4,
-  .heading-playfair h5,
-  .heading-playfair h6 { font-size: 0.8rem; }
-
-  .heading-poppins h1 { font-size: 1.35rem; }
-  .heading-poppins h2 { font-size: 1.05rem; }
-  .heading-poppins h3 { font-size: 0.8rem; }
-  .heading-poppins h4,
-  .heading-poppins h5,
-  .heading-poppins h6 { font-size: 0.7rem; }
+  .body-inter { font-size: 15px; }
+  .heading-inter h1 { font-size: 1.35rem; }
+  .heading-inter h2 { font-size: 1.05rem; }
 }
 
-/* ===== Justified text on wider screens only ===== */
-/* On phones, justified lines leave large gaps between words, so text is left-aligned there. */
+/* ===== Text alignment: left-aligned (ragged right) everywhere ===== */
 .page__content {
   text-align: left;
-}
-
-@media (min-width: 768px) {
-  .page__content {
-    text-align: justify;
-    hyphens: auto;
-  }
-}
-
-/* Raleway uses old-style (descending) numerals by default; use lining numerals for years and dates */
-body {
-  font-variant-numeric: lining-nums;
 }
 
 /* ===== Reduce spacing for H1 and H3 ===== */

@@ -7,4 +7,4 @@ authors:
   - Brian Lai
 ---
 
-How does China use foreign aid to shape the adoption of artificial intelligence (AI) in the Global South? We find that whether a state receives Chinese AI aid depends on its technological capacity and diplomatic alignment, while the amount of aid depends on security threats: states fighting terrorism and insurgency receive more AI funding, while those facing mass unrest receive less. These patterns challenge the common view that China simply exports AI to help governments suppress dissent.
+How does China use foreign aid to shape the adoption of artificial intelligence (AI) in the Global South? Our two-stage selection models suggest that a state's AI aid reception depends on its technological capacity and diplomatic alignment. Once selection is accounted for, states facing terrorism and insurgency receive more, while those facing mass unrest – as well as those aligned with either the US or China – receive less. These patterns challenge the view that China simply exports AI to help governments suppress dissent.

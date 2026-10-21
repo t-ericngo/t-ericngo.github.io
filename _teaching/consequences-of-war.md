@@ -5,4 +5,4 @@ order: 4
 meta: "Spring 2023 (virtual)"
 ---
 
-A course on the political, economic, and social consequences of war for states and societies. I taught virtual sections of the course, leading online discussions, grading assignments, and holding virtual office hours.
+The enduring effects of war: on individuals, both combatants and noncombatants; on states' development and their economic, political, and social life; and on the international system. I ran virtual sections that expanded on the lectures and readings, and graded students' assignments.

@@ -16,7 +16,7 @@ Pushing to `master` rebuilds and publishes the site through GitHub Actions
 | CV | replace `files/NgoEric_CV.pdf`; set `cv_updated` in `_config.yml` |
 | Sidebar (photo, bio, links) | `author:` section of `_config.yml` |
 | Menu | `_data/navigation.yml` |
-| Styles | `assets/css/custom.css` |
+| Styles | `assets/css/custom.css` (colors, buttons); font and text size in `assets/css/main.scss` |
 
 ## Common updates
 
@@ -34,6 +34,7 @@ venue: ""              # journal (published papers)
 year:                  # year (published papers)
 link: ""               # DOI/article URL  -> "Link" button
 replication: ""        # Dataverse URL    -> "Replication Data" button
+code: ""               # GitHub/code URL  -> "GitHub" (or "Code") button
 open_access: false     # true -> "Open access" tag
 ---
 Abstract text…         # -> "Abstract" button (leave empty to hide it)
