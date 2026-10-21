@@ -112,10 +112,22 @@
   .heading-poppins h6 { font-size: 0.7rem; }
 }
 
-/* ===== Make All Text Justified (Site-Wide) ===== */
+/* ===== Justified text on wider screens only ===== */
+/* On phones, justified lines leave large gaps between words, so text is left-aligned there. */
 .page__content {
-  text-align: justify;
-  // hyphens: auto;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .page__content {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+/* Raleway uses old-style (descending) numerals by default; use lining numerals for years and dates */
+body {
+  font-variant-numeric: lining-nums;
 }
 
 /* ===== Reduce spacing for H1 and H3 ===== */

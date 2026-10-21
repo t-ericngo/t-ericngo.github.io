@@ -1,51 +1,76 @@
-# Academic Pages
+# t-ericngo.github.io
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+Personal academic website of T. Eric Ngo (Anh-Tu Ngo), built with Jekyll on the
+[AcademicPages](https://github.com/academicpages/academicpages.github.io) template.
+Pushing to `master` rebuilds and publishes the site through GitHub Actions
+(`.github/workflows/jekyll.yml`), usually within a minute or two.
 
-Academic Pages is a Github Pages template for academic websites.
+## Where things live
 
-# Getting Started
+| Page | Edit |
+| --- | --- |
+| About (home) | `_pages/about.md` |
+| Research | one file per paper in `_research/` |
+| Talks | one file per talk in `_talks/` |
+| Teaching | one file per course in `_teaching/`; teaching interests are in `_pages/teaching.html` |
+| CV | replace `files/NgoEric_CV.pdf`; set `cv_updated` in `_config.yml` |
+| Sidebar (photo, bio, links) | `author:` section of `_config.yml` |
+| Menu | `_data/navigation.yml` |
+| Styles | `assets/css/custom.css` |
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Common updates
 
-See more info at https://academicpages.github.io/
+**Add a paper.** Copy any file in `_research/` (e.g. `us-versus-them.md`), rename it,
+and edit the front matter. The abstract goes below the second `---`.
 
-## Running Locally
+```yaml
+---
+title: "Paper title"
+status: working        # published | under-review | working | ongoing  (= section)
+order: 1               # position within the section
+authors:               # full author list; a single author shows no author line
+  - Anh-Tu Ngo
+venue: ""              # journal (published papers)
+year:                  # year (published papers)
+link: ""               # DOI/article URL  -> "Link" button
+replication: ""        # Dataverse URL    -> "Replication Data" button
+open_access: false     # true -> "Open access" tag
+---
+Abstract text…         # -> "Abstract" button (leave empty to hide it)
+```
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+When a paper is accepted, change `status` to `published` and fill in `venue`,
+`year`, and `link`. Buttons appear only for fields that are filled in.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+**Add a talk.** Add `_talks/YYYY-MM-DD-short-name.md` with `title`, `type`, `venue`,
+`location`, and `date`. Use `paper: <file name in _research without .md>` to reuse a
+paper's abstract, or write the abstract below the front matter. Put slides in
+`files/` and set `slides: "/files/your-slides.pdf"` to show the Slides button.
+A future date shows an "Upcoming" tag; `invited: true` shows "Invited".
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+**Add a course.** Add a file to `_teaching/` with `title`, `category` (`ta` or
+`workshop`), `order`, and `meta` (e.g. `"Fall 2026"`). The text below the front
+matter is the Summary.
 
-# Maintenance
+**Update the CV.** Export the CV to PDF, save it as `files/NgoEric_CV.pdf`
+(replacing the old one), and change `cv_updated` in `_config.yml`.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Direct links: every entry has an anchor that opens its abstract, e.g.
+`https://t-ericngo.github.io/research/#us-versus-them`.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## Preview locally (optional)
 
-## Bugfixes and enhancements
+```bash
+bundle install
+bundle exec jekyll serve -l -H localhost
+```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+Then open http://localhost:4000. Note that `_includes/base_path` uses `site.url`, so
+for a local preview start the server with `--config _config.yml,_config.dev.yml`
+where `_config.dev.yml` contains `url: "http://localhost:4000"`.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Credits
+
+Template: [AcademicPages](https://github.com/academicpages/academicpages.github.io), a fork of
+[Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) (MIT License).
+The CV viewer uses [PDF.js](https://mozilla.github.io/pdf.js/) (Apache 2.0, `assets/pdfjs/`).
