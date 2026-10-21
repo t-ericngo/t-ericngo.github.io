@@ -264,6 +264,31 @@
   margin-bottom: 0;
 }
 
+.interests__group p:has(+ .interests__sublist) {
+  margin-bottom: 0.2rem;
+}
+
+.interests__sublist {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.interests__sublist li {
+  margin-bottom: 0.3rem;
+}
+
+.interests__sublist li:last-child {
+  margin-bottom: 0;
+}
+
+.interests__sublist strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .interests__label {
   display: block;
   font-size: 0.7rem;

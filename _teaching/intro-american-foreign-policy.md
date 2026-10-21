@@ -5,4 +5,4 @@ order: 2
 meta: "Spring 2024, Fall 2021"
 ---
 
-An introduction to how US foreign policy is made and how the United States engages the world. I ran the discussion sections, preparing slides, discussion materials, and in-class activities – including group work and negotiation simulations – that applied concepts from the lectures and readings, and I guided, read, and graded students' assignments.
+An introduction to US foreign policy: its goals, themes, and patterns; the problems policymakers face; the means used in dealing with other nations and international organizations; and the processes and factors that shape how policy is made. I ran discussion sections built around group work, presentations, and negotiation simulations, and guided and graded students' assignments, including a staged final paper.
