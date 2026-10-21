@@ -24,7 +24,7 @@ authors:
 venue: "International Interactions"
 year: 2026
 link: "https://doi.org/10.1080/03050629.2026.2712372"
-pdf: ""
+pdf: ""   # not open access: post only your Accepted Manuscript here, not the publisher PDF
 replication: "https://www.tandfonline.com/doi/suppl/10.1080/03050629.2026.2712372?scroll=top"
 open_access: false
 ---
