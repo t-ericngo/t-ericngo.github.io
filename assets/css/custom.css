@@ -331,6 +331,7 @@
    ========================================================================== */
 
 .cv-toolbar {
+  max-width: 850px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -345,7 +346,8 @@
 }
 
 .cv-viewer {
-  height: 80vh;
+  max-width: 820px;      /* the window's width */
+  height: 75vh;
   min-height: 420px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
