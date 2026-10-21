@@ -11,7 +11,6 @@ authors:
 venue: "Journal of Information Technology & Politics"
 year: 2026
 link: "https://doi.org/10.1080/19331681.2026.2745720"
-replication: ""   # TODO: paste a replication-data link here if one exists
 open_access: true
 ---
 

@@ -8,6 +8,7 @@
 #   venue, year : journal and year (published papers only)
 #   link        : article URL (DOI). Shows the "Link" button.
 #   replication : replication data URL (e.g., Dataverse). Shows the "Replication Data" button.
+#   code        : code repository URL. Shows a "GitHub" (or "Code") button.
 #   open_access : true shows an "Open access" tag
 #   The text below the second '---' is the abstract (shows the "Abstract" button);
 #   leave it empty and the button is hidden. Fields left blank simply don't show.
@@ -21,7 +22,8 @@ authors:
 venue: "International Interactions"
 year: 2026
 link: "https://doi.org/10.1080/03050629.2026.2712372"
-replication: ""   # TODO: paste the Dataverse link here to show the "Replication Data" button
+replication: "https://www.tandfonline.com/doi/suppl/10.1080/03050629.2026.2712372?scroll=top"
+code: "https://github.com/t-ericngo/2026-ethnic-inequality-conflict"   # replication files (earlier version) on GitHub
 open_access: false
 ---
 

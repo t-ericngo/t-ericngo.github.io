@@ -3,12 +3,62 @@
    ========================================================================== */
 
 :root {
-  --accent: #2a6f86;          /* buttons, panel rule */
-  --accent-soft: #e8f1f4;     /* hover/active background */
-  --ink: #222;
-  --muted: #666;
-  --rule: #e6e8ea;
-  --panel-bg: #f7f9fa;
+  --accent: #0f6b6b;          /* deep teal: links, buttons, section labels */
+  --accent-soft: #e6f2f1;     /* hover/active background */
+  --ink: #1d2125;
+  --muted: #5f6b76;
+  --rule: #eef1f3;
+  --panel-bg: #f5f8f8;
+}
+
+/* ==========================================================================
+   "Contemporary" style: header, sidebar, links
+   ========================================================================== */
+
+.masthead {
+  border-bottom: 0;
+  box-shadow: 0 1px 0 #eceff1;
+}
+
+.greedy-nav .masthead__menu-item--lg a {   /* site name, top left */
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f2e2e !important;
+}
+
+.greedy-nav a {
+  font-weight: 500;
+  color: #4a5560;
+}
+
+.greedy-nav a:hover {
+  color: var(--accent);
+}
+
+.author__avatar img {
+  border-radius: 18px;
+}
+
+.author__name {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.page__title {
+  letter-spacing: -0.02em;
+}
+
+/* Job-market note at the top of the About page */
+.job-market-note {
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
 }
 
 /* Headings inside page content */
@@ -37,11 +87,15 @@
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {
-  font-size: 1.1rem;
-  margin: 2rem 0 0.25rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
+.entry-section .entry-section__title {   /* small-caps section labels */
+  margin: 2.2rem 0 0.25rem;
+  padding-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 0;
 }
 
 .entry {
@@ -87,18 +141,17 @@
   align-items: center;
   gap: 0.35rem;
   margin: 0;
-  padding: 0.3rem 0.75rem;
+  padding: 0.3rem 0.7rem;
   font-family: inherit;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0;
   line-height: 1.4;
-  text-transform: uppercase;
   text-decoration: none !important;
   color: var(--accent) !important;
   background: #fff;
-  border: 1px solid #b9cfd7;
-  border-radius: 999px;
+  border: 1px solid #c6d9d8;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
@@ -284,7 +337,7 @@
 }
 
 .cv-page a:hover {
-  background: rgba(42, 111, 134, 0.12);
+  background: rgba(15, 107, 107, 0.12);
 }
 
 .cv-viewer__status {

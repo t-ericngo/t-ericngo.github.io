@@ -30,7 +30,7 @@ redirect_from:
   <h2 class="entry-section__title">{{ parts[1] }}</h2>
   {% for item in items %}
     {% if item.open_access %}{% assign tags = "Open access" | split: "|" %}{% else %}{% assign tags = nil %}{% endif %}
-    {% include entry.html id=item.slug title=item.title authors=item.authors venue=item.venue year=item.year panel=item.content panel_label="Abstract" replication=item.replication link=item.link tags=tags %}
+    {% include entry.html id=item.slug title=item.title authors=item.authors venue=item.venue year=item.year panel=item.content panel_label="Abstract" replication=item.replication code=item.code link=item.link tags=tags %}
   {% endfor %}
 </section>
   {% endif %}
