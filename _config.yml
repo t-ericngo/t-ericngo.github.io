@@ -32,11 +32,12 @@ author:
   location         : "Iowa City, IA, USA"
   employer         : "University of Iowa"
   uri              : # URL
-  email            : "tu-ngo@uiowa.edu" 
+  email            : "tu-ngo@uiowa.edu"
+  pub_name         : "Anh-Tu Ngo"   # the name you publish under; it is bolded in author lists on the Research page
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=7d2nT7MAAAAJ"
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -208,29 +209,26 @@ kramdown:
   enable_coderay: false
 
 
+# CV shown on the CV page. To update your CV, replace files/NgoEric_CV.pdf
+# with the new PDF (same file name) and change cv_updated.
+cv_pdf                   : "/files/NgoEric_CV.pdf"
+cv_updated               : "October 2026"
+
+
 # These settings control the types of collections used by the template
+#   _research : one file per paper/project (front matter = details, body = abstract)
+#   _talks    : one file per talk (body = abstract; or set `paper:` to reuse a paper's abstract)
+#   _teaching : one file per course/workshop (body = the "Summary" text)
+# Entries are shown only on the Research, Talks, and Teaching pages (output: false),
+# so they have no separate pages of their own. Each entry has an anchor, e.g.
+# /research/#us-versus-them opens that paper's abstract directly.
 collections:
-  # publications:
-  #   output: true
-  #   permalink: /:collection/:path/
   research:
-    output: true
-    permalink: /:collection/:path/
-  workingpapers:
-    output: true
-    permalink: /:collection/:path/
-  projects:
-    output: true
-    permalink: /:collection/:path/  
+    output: false
   teaching:
-    output: true
-    permalink: /:collection/:path/
-  # portfolio:
-  #   output: true
-  #   permalink: /:collection/:path/
+    output: false
   talks:
-    output: true
-    permalink: /:collection/:path/
+    output: false
 
 
 # These settings control how pages and collections are included in the site
@@ -266,10 +264,10 @@ defaults:
       share: true
       comments: true
       
-  # _workingpapers
+  # _research
   - scope:
-      path: "_workingpapers"
-      type: "workingpapers"
+      path: "_research"
+      type: "research"
     values:
       layout: single
       author_profile: true

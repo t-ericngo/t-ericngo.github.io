@@ -1,0 +1,50 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+description: "Teaching interests and experience of T. Eric Ngo in international relations, foreign policy, comparative politics, political methodology, and AI."
+author_profile: true
+---
+{% comment %}
+  Courses and workshops live in _teaching/ (one file per course).
+  Teaching interests are edited directly below.
+{% endcomment %}
+
+<section class="entry-section">
+  <h2 class="entry-section__title">Teaching Interests</h2>
+  <div class="interests">
+    <div class="interests__group">
+      <h3>Undergraduate</h3>
+      <p><span class="interests__label">Substantive</span>International Relations, International Security, Foreign Policy, International Conflict, Political Violence, Authoritarian Politics, International Relations of Southeast Asia</p>
+      <p><span class="interests__label">Methods</span>Probability &amp; Statistics, Research Design, Quantitative Methods, Social Data Analytics, Regression, Network Analysis, Time Series, AI and Society</p>
+    </div>
+    <div class="interests__group">
+      <h3>Graduate</h3>
+      <p><span class="interests__label">Substantive</span>International Relations, International Conflict, Foreign Policy, Domestic Politics and IR, Political Violence</p>
+      <p><span class="interests__label">Methods</span>Computational Social Science, Text Analysis, Machine Learning, Large Language Models, Network Analysis, Probability &amp; Statistics, Linear Regression, Limited Dependent Variable Regression, Time Series, Multilevel Models</p>
+    </div>
+  </div>
+</section>
+
+{% assign groups = "workshop|Workshop Instruction;ta|Graduate Teaching Assistant, University of Iowa" | split: ";" %}
+{% for g in groups %}
+  {% assign parts = g | split: "|" %}
+  {% assign items = site.teaching | where: "category", parts[0] | sort: "order" %}
+  {% if items.size > 0 %}
+<section class="entry-section">
+  <h2 class="entry-section__title">{{ parts[1] }}</h2>
+  {% for c in items %}
+    {% include entry.html id=c.slug title=c.title meta=c.meta panel=c.content panel_label="Summary" %}
+  {% endfor %}
+</section>
+  {% endif %}
+{% endfor %}
+
+<section class="entry-section">
+  <h2 class="entry-section__title">Teaching Award &amp; Evaluations</h2>
+  <ul class="plain-list">
+    <li><a href="https://cot.org.uiowa.edu/teaching-awards/outstanding-teaching-assistant-awards#accordion-item-326-1" target="_blank" rel="noopener">Outstanding Teaching Assistant Award (2024–2025), University of Iowa</a></li>
+    <li><a href="{{ '/files/Fall%202024_TA%20Evaluation.pdf' | relative_url }}" target="_blank" rel="noopener">Teaching Evaluations, Fall 2024</a> (Introduction to International Relations)</li>
+    <li><a href="{{ '/files/Spring%202024_TA%20Evaluation.pdf' | relative_url }}" target="_blank" rel="noopener">Teaching Evaluations, Spring 2024</a> (Introduction to American Foreign Relations)</li>
+  </ul>
+</section>

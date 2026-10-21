@@ -1,0 +1,65 @@
+{% comment %}
+  One list entry with optional buttons. Used by the Research, Talks, and Teaching pages.
+
+  Parameters (all optional except id and title):
+    id            anchor id, e.g. "us-versus-them" -> page.html#us-versus-them
+    title         headline (plain text)
+    authors       array of names; shown only when there is more than one author,
+                  with site.author.pub_name in bold
+    venue         journal name (italic)    year: year shown after the venue
+    meta          one plain line under the title (e.g. venue · location, or terms)
+    tags          array of short labels shown as small chips (e.g. "Open access")
+    panel         HTML/markdown text revealed by the toggle button
+    panel_label   label of the toggle button ("Abstract", "Summary")
+    replication   URL -> "Replication Data" button (new tab)
+    link          URL -> "Link" button (new tab)
+    slides        URL -> "Slides" button (new tab)
+{% endcomment %}
+{%- assign pubname = site.author.pub_name | default: site.author.name -%}
+{%- assign panel = include.panel | strip -%}
+{%- assign has_replication = false -%}{%- if include.replication and include.replication != "" -%}{%- assign has_replication = true -%}{%- endif -%}
+{%- assign has_link = false -%}{%- if include.link and include.link != "" -%}{%- assign has_link = true -%}{%- endif -%}
+{%- assign has_slides = false -%}{%- if include.slides and include.slides != "" -%}{%- assign has_slides = true -%}{%- endif -%}
+{%- assign slides_url = include.slides -%}
+{%- if has_slides -%}{%- unless include.slides contains "://" -%}{%- assign slides_url = include.slides | relative_url -%}{%- endunless -%}{%- endif -%}
+<article class="entry" id="{{ include.id }}">
+  <h3 class="entry__title">{{ include.title }}</h3>
+  {%- if include.authors and include.authors.size > 1 %}
+  <p class="entry__authors">
+    {%- for a in include.authors -%}
+      {%- if a == pubname -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  </p>
+  {%- endif %}
+  {%- if include.venue and include.venue != "" %}
+  <p class="entry__meta"><em>{{ include.venue }}</em>{% if include.year %} ({{ include.year }}){% endif %}</p>
+  {%- endif %}
+  {%- if include.meta and include.meta != "" %}
+  <p class="entry__meta">{{ include.meta }}</p>
+  {%- endif %}
+  {%- if panel != "" or has_replication or has_link or has_slides or include.tags %}
+  <div class="entry__actions">
+    {%- if panel != "" %}
+    <button type="button" class="entry-btn" data-toggle-panel aria-expanded="false" aria-controls="{{ include.id }}-panel"><i class="fas fa-align-left" aria-hidden="true"></i> {{ include.panel_label | default: "Abstract" }}</button>
+    {%- endif %}
+    {%- if has_replication %}
+    <a class="entry-btn" href="{{ include.replication }}" target="_blank" rel="noopener"><i class="fas fa-database" aria-hidden="true"></i> Replication Data</a>
+    {%- endif %}
+    {%- if has_link %}
+    <a class="entry-btn" href="{{ include.link }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Link</a>
+    {%- endif %}
+    {%- if has_slides %}
+    <a class="entry-btn" href="{{ slides_url }}" target="_blank" rel="noopener"><i class="fas fa-display" aria-hidden="true"></i> Slides</a>
+    {%- endif %}
+    {%- for t in include.tags %}
+    <span class="entry-tag entry-tag--{{ t | slugify }}">{{ t }}</span>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  {%- if panel != "" %}
+  <div class="entry__panel" id="{{ include.id }}-panel" hidden>
+    {{ panel | markdownify }}
+  </div>
+  {%- endif %}
+</article>

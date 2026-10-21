@@ -1,4 +1,9 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ base_path }}/assets/js/entries.js"></script>
+{% if page.load_cv_viewer %}
+<script src="{{ base_path }}/assets/pdfjs/pdf.min.js"></script>
+<script src="{{ base_path }}/assets/js/cv-viewer.js"></script>
+{% endif %}
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

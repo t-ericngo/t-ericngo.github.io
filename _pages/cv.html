@@ -1,0 +1,29 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+description: "Curriculum vitae of T. Eric Ngo (Anh-Tu Ngo), PhD candidate in Political Science at the University of Iowa."
+author_profile: true
+load_cv_viewer: true
+redirect_from:
+  - /resume
+---
+{% comment %}
+  To update the CV: replace files/NgoEric_CV.pdf with the new PDF (keep the same
+  file name) and change `cv_updated` in _config.yml.
+{% endcomment %}
+{% assign cv_url = site.cv_pdf | relative_url %}
+<div class="cv-toolbar">
+  <span class="cv-toolbar__note">{% if site.cv_updated %}Last updated {{ site.cv_updated }}{% endif %}</span>
+  <span class="cv-zoom" id="cv-zoom" hidden>
+    <button type="button" class="entry-btn cv-zoom__btn" id="cv-zoom-out" aria-label="Zoom out"><i class="fas fa-minus" aria-hidden="true"></i></button>
+    <span class="cv-zoom__level" id="cv-zoom-level" aria-live="polite">100%</span>
+    <button type="button" class="entry-btn cv-zoom__btn" id="cv-zoom-in" aria-label="Zoom in"><i class="fas fa-plus" aria-hidden="true"></i></button>
+  </span>
+  <a class="entry-btn" href="{{ cv_url }}" download><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
+  <a class="entry-btn" href="{{ cv_url }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Open in new tab</a>
+</div>
+
+<div class="cv-viewer" id="cv-viewer" data-src="{{ cv_url }}" data-worker="{{ '/assets/pdfjs/pdf.worker.min.js' | relative_url }}" role="region" aria-label="CV (PDF)" tabindex="0">
+  <p class="cv-viewer__status">Loading CV… If it does not appear, <a href="{{ cv_url }}" target="_blank" rel="noopener">open the PDF directly</a>.</p>
+</div>

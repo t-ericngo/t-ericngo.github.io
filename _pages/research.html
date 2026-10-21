@@ -1,0 +1,37 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+description: "Publications, papers under review, working papers, and ongoing projects of T. Eric Ngo (Anh-Tu Ngo) on international conflict, authoritarian and elite politics, US-China competition, and large language models (LLMs) for social science."
+author_profile: true
+redirect_from:
+  - /publications/
+  - /workingpapers/uschina-aid-dompol/
+  - /workingpapers/llm-ie-elitenet/
+  - /workingpapers/ethnic-ineq-conflict/
+  - /workingpapers/dictators-maritime/
+  - /workingpapers/vietnam-nationalism-socialmedia/
+---
+{% comment %}
+  Entries live in _research/ (one file per paper). Each file's `status` decides
+  its section below and `order` decides its position. See _research/us-versus-them.md
+  for the list of fields.
+{% endcomment %}
+{% if site.author.googlescholar %}
+<p class="page__lead-note">Publications appear under <strong>{{ site.author.pub_name }}</strong>. See also my <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
+{% endif %}
+
+{% assign sections = "published|Peer-Reviewed Articles;under-review|Under Review;working|Working Papers;ongoing|Ongoing Projects" | split: ";" %}
+{% for section in sections %}
+  {% assign parts = section | split: "|" %}
+  {% assign items = site.research | where: "status", parts[0] | sort: "order" %}
+  {% if items.size > 0 %}
+<section class="entry-section">
+  <h2 class="entry-section__title">{{ parts[1] }}</h2>
+  {% for item in items %}
+    {% if item.open_access %}{% assign tags = "Open access" | split: "|" %}{% else %}{% assign tags = nil %}{% endif %}
+    {% include entry.html id=item.slug title=item.title authors=item.authors venue=item.venue year=item.year panel=item.content panel_label="Abstract" replication=item.replication link=item.link tags=tags %}
+  {% endfor %}
+</section>
+  {% endif %}
+{% endfor %}

@@ -1,54 +1,336 @@
-/* 
-/* Smaller page titles on archive pages like Research/Teaching */
-.layout--archive h1.page__title { 
-  font-size: 1.45rem;           /* was ~2.6rem */
-  line-height: 1.35;
+/* ==========================================================================
+   Custom styles (loaded after main.css)
+   ========================================================================== */
+
+:root {
+  --accent: #2a6f86;          /* buttons, panel rule */
+  --accent-soft: #e8f1f4;     /* hover/active background */
+  --ink: #222;
+  --muted: #666;
+  --rule: #e6e8ea;
+  --panel-bg: #f7f9fa;
 }
 
-/* 
-/* Make H2 titles (like working paper titles) smaller */
+/* Headings inside page content */
 .page__content h2 {
-  font-size: 1.2em;   /* adjust as needed */
-  line-height: 1.2;
+  font-size: 1.2em;
+  line-height: 1.25;
 }
- */
 
-/* If they are H3 */
 .page__content h3 {
   font-size: 1em;
-  line-height: 1.2;
-}
-
-/* Smaller item titles (working papers, courses, talks, publications lists) */
-.layout--archive .archive__item-title {
-  font-size: 1rem;          /* tweak to taste: 1.0–1.1rem */
-  line-height: 1.2;
-  margin-bottom: 0.15rem;
-  font-weight: 500;      /* adjust boldness */
-}
-
-/* Optional: slightly smaller excerpts under each item */
-.layout--archive .archive__item-excerpt {
-  font-size: 0.95rem;
-  line-height: 1.35;
-}
-
-/* Optional: subheadings within the page content (e.g., "Working Papers") */
-.layout--archive .page__content h2 {
-  font-size: 1.2rem;
   line-height: 1.3;
 }
 
-/* Single item pages (e.g., a working paper detail): tone down the big H1 */
-.layout--single h1.page__title {
-  font-size: 1rem;           /* tweak to taste */
-  line-height: 1.2;
+/* Small note under a page title (e.g. Research page) */
+.page__lead-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: -0.5rem 0 0.5rem;
 }
 
-/* Responsive: nudge sizes down a bit more on mobile */
-@media (max-width: 768px) {
-  .layout--archive .page__title { font-size: 1.4rem; }
-  .layout--archive .archive__item-title { font-size: 0.98rem; }
-  .layout--single  .page__title { font-size: 1.6rem; }
-} 
-*/
+/* ==========================================================================
+   List entries with buttons (Research, Talks, Teaching)
+   ========================================================================== */
+
+.entry-section {
+  margin-bottom: 1.5rem;
+}
+
+.entry-section .entry-section__title {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry:last-child {
+  border-bottom: 0;
+}
+
+.entry .entry__title {        /* beats .heading-poppins h3 */
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.entry__authors,
+.entry__meta {
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.entry__authors strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.entry__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+}
+
+.entry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0.3rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: var(--accent) !important;
+  background: #fff;
+  border: 1px solid #b9cfd7;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.entry-btn:hover,
+.entry-btn:focus-visible {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.entry-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.entry-btn[aria-expanded="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff !important;
+}
+
+.entry-btn i {
+  font-size: 0.85em;
+}
+
+.entry-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e7d4f;
+  background: #eaf5ee;
+  border-radius: 999px;
+}
+
+.entry-tag--upcoming {
+  color: #8a5a00;
+  background: #fdf3dc;
+}
+
+.entry-tag--invited {
+  color: #5b3f8c;
+  background: #f1ecf9;
+}
+
+.entry__panel {
+  margin-top: 0.7rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #333;
+  background: var(--panel-bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  animation: entry-fade 0.18s ease-out;
+}
+
+.entry__panel p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes entry-fade {
+  from { opacity: 0; transform: translateY(-3px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry__panel { animation: none; }
+  .entry-btn { transition: none; }
+}
+
+/* ==========================================================================
+   Teaching interests
+   ========================================================================== */
+
+.interests {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .interests { grid-template-columns: 1fr 1fr; }
+}
+
+.interests__group {
+  padding: 0.85rem 1rem;
+  background: var(--panel-bg);
+  border-radius: 6px;
+}
+
+.interests .interests__group h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.interests__group p {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.interests__group p:last-child {
+  margin-bottom: 0;
+}
+
+.interests__label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Simple link list (Teaching awards & evaluations) */
+.plain-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.plain-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* ==========================================================================
+   CV viewer
+   ========================================================================== */
+
+.cv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.cv-toolbar__note {
+  margin-right: auto;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.cv-viewer {
+  height: 80vh;
+  min-height: 420px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 14px;
+  background: #e9ecef;
+  border: 1px solid #dcdfe3;
+  border-radius: 6px;
+}
+
+.cv-page {
+  position: relative;
+  max-width: none;
+  margin: 0 auto 14px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.cv-page:last-child {
+  margin-bottom: 0;
+}
+
+.cv-page canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cv-page a {
+  position: absolute;
+  display: block;
+}
+
+.cv-page a:hover {
+  background: rgba(42, 111, 134, 0.12);
+}
+
+.cv-viewer__status {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.cv-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .cv-viewer {
+    height: 75vh;
+    padding: 8px;
+  }
+  .cv-page {
+    margin-bottom: 8px;
+  }
+}
+
+.cv-zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cv-zoom[hidden] {
+  display: none;
+}
+
+.cv-zoom__btn {
+  padding: 0.3rem 0.55rem;
+}
+
+.cv-zoom__level {
+  min-width: 3.2em;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.entry__panel p {
+  color: #333;
+}
