@@ -441,6 +441,12 @@ body,
   margin-bottom: 0;
 }
 
+.entry__panel > :first-child {  /* no extra gap above the first line: the Research, Talks, and Teaching
+                                   pages use the archive layout, which keeps the browser's default
+                                   paragraph margin, so the text sat lower than the box's padding */
+  margin-top: 0;
+}
+
 @keyframes entry-fade {
   from { opacity: 0; transform: translateY(-3px); }
   to   { opacity: 1; transform: none; }
