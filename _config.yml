@@ -15,7 +15,7 @@ description              : &description "PhD candidate at the University of Iowa
 url                      : "https://t-ericngo.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "t-ericngo/t-ericngo.github.io"
-color_theme              : "earthy_darkorange"   # "earthy_n2", "earthy_n3", "earthy_darkorange", "rustynavy_n3", "rustynavy_darkorange", or "classic"; each is described at the top of assets/css/custom.css
+color_theme              : "rustynavy_darkorange"   # color options: "earthy_n2", "earthy_n3", "earthy_darkorange", "rustynavy_n3", "rustynavy_darkorange", or "classic"; each is described at the top of assets/css/custom.css
 
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"  
   # bio: <br> starts a new line; each <span> keeps an area on one line (wraps only at the dots);
   #      the author__role span shows your position in dark text
-  bio              : "<span class='author__role'>PhD Candidate in <span>Political Science</span>,<br><span>University of Iowa</span></span><br><span>International relations</span>&nbsp;· <span>Foreign policy</span>&nbsp;· <span>Elite politics</span>&nbsp;· <span>Authoritarian politics</span>&nbsp;· <span>Computational social science</span>"
+  bio              : "<span class='author__role'><strong>PhD Candidate in <span>Political Science</span>,<br><span>University of Iowa</span></strong></span><br><span>International relations</span>&nbsp;· <span>Foreign policy</span>&nbsp;· <span>Elite politics</span>&nbsp;· <span>Authoritarian politics</span>&nbsp;· <span>Computational social science</span>"
   location         : "Iowa City, IA, USA"
   employer         : "University of Iowa"
   uri              : # URL
