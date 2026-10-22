@@ -8,6 +8,10 @@ main:
   # - title: "Publications"
   #   url: /publications/
 
+  - title: "About"
+    url: /
+    hide_on_phone: true   # phones already use your name (top left) as the link to About
+
   - title: "Research"
     url: /research/
 
