@@ -4,11 +4,16 @@
 
 /* --------------------------------------------------------------------------
    COLOR THEMES. Choose one with `color_theme:` in _config.yml:
-     classic   : white page, deep-teal accents (the original look)
-     earthy_n2 : warm paper page, rust buttons and links, navy section titles (#335a8a)
-     earthy_n3 : same as earthy_n2 with a lighter navy for section titles (#3b679b)
-   Both earthy themes share the html.theme-earthy colors below; each
-   variant only sets its own section-title color.
+     classic              : white page, deep-teal accents (the original look)
+     earthy_n2            : warm paper page, rust buttons and links, navy section titles (#335a8a)
+     earthy_n3            : same as earthy_n2 with a lighter navy for section titles (#3b679b)
+     earthy_darkorange    : same as earthy_n3, but section titles in the button rust (#a2471d)
+     rustynavy_n3         : warm paper page, navy (#3b679b) buttons, links, boxes, and section titles
+     rustynavy_darkorange : same as rustynavy_n3, but section titles in rust (#a2471d)
+   All earthy and rustynavy themes share the html.theme-earthy colors below
+   (paper background, gray subtitles); the rustynavy themes then switch
+   buttons, links, and boxes to navy in html.theme-rustynavy. Each variant
+   only sets the few colors that make it different.
    To fine-tune a theme, edit its color values below.
    -------------------------------------------------------------------------- */
 
@@ -17,7 +22,9 @@
   --footer-bg: #f2f3f3;
   --ink: #1d2125;             /* body text and titles */
   --muted: #5f6b76;           /* subtitles: authors, journal, dates, notes */
-  --heading-accent: #0f6b6b;  /* section titles (PEER-REVIEWED ARTICLES), teaching-interest labels */
+  --heading-accent: #0f6b6b;  /* section titles (PEER-REVIEWED ARTICLES), teaching-interest labels, job-market-note links */
+  /* Optional, set by some themes: --section-title (section titles only) and
+     --note-link (job-market-note links only); both default to --heading-accent */
   --accent: #0f6b6b;          /* buttons */
   --accent-soft: #e6f2f1;     /* button hover, job-market note */
   --link: #0f6b6b;            /* links in text */
@@ -78,6 +85,32 @@ html.theme-earthy_n3 {        /* lighter navy section titles, lightness 43 (like
   --heading-accent: #3b679b;
 }
 
+html.theme-earthy_darkorange {  /* earthy_n3 with section titles in the button rust */
+  --heading-accent: #3b679b;    /* teaching-interest labels and job-market-note links stay navy */
+  --section-title: #a2471d;
+}
+
+html.theme-rustynavy {        /* shared by the rustynavy themes: navy buttons, links, and boxes on warm paper */
+  --heading-accent: #3b679b;
+  --accent: #3b679b;
+  --accent-soft: #e4ebf4;     /* button hover, job-market note */
+  --link: #3b679b;
+  --link-hover: #284a73;
+  --panel-bg: #ebf0f6;        /* abstract / summary box */
+  --box-bg: #eef2f7;          /* teaching-interest boxes */
+  --btn-border: #c5d3e4;
+  --cv-link-hover: rgba(59, 103, 155, 0.12);
+  --note-link: #a2471d;       /* job-market-note links in rust, so they stand out from the light navy box */
+}
+
+html.theme-rustynavy_n3 {     /* navy section titles */
+  --section-title: #3b679b;
+}
+
+html.theme-rustynavy_darkorange {  /* section titles in rust */
+  --section-title: #a2471d;
+}
+
 /* Theme colors for parts of the base theme (no visible change in classic) */
 html,
 body,
@@ -118,10 +151,10 @@ body,
   color: var(--link-hover);
 }
 
-/* Job-market note (About page): its links use the section-title navy so they
-   stand out from the light rust box */
+/* Job-market note (About page): its links use a second color so they stand
+   out from the tinted box (navy in the earthy themes, rust in the rustynavy themes) */
 .theme-earthy .page__content .job-market-note a:not(.entry-btn) {
-  color: var(--heading-accent);
+  color: var(--note-link, var(--heading-accent));
 }
 
 .theme-earthy .page__content .job-market-note a:not(.entry-btn):hover {
@@ -188,6 +221,11 @@ body,
   white-space: nowrap;
 }
 
+.author__bio .author__role {   /* "PhD Candidate in Political Science, University of Iowa": dark text */
+  white-space: normal;         /* the phrase may wrap; the spans inside it still stay whole */
+  color: var(--ink);
+}
+
 .sidebar p,
 .sidebar li {                /* sidebar bio and contact links (theme default: 12px) */
   font-size: 12px;
@@ -242,14 +280,14 @@ body,
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {   /* teal caps section labels: same size as the 16px titles */
+.entry-section .entry-section__title {   /* caps section labels: same size as the 16px titles */
   margin: 2.2rem 0 0.25rem;
   padding-bottom: 0;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--heading-accent);
+  color: var(--section-title, var(--heading-accent));
   border-bottom: 0;
 }
 
