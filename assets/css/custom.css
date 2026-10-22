@@ -11,6 +11,8 @@
      rustynavy_n3         : warm paper page, lighter navy (#4a73a2) buttons, links, and boxes,
                             navy (#3b679b) section titles, rust teaching-interest labels
      rustynavy_darkorange : same as rustynavy_n3, but section titles in rust (#a2471d)
+     rustyclassic         : classic (deep-teal accents) on the warm paper page, with light teal
+                            boxes and warm footer, lines, and buttons to suit the paper
    All earthy and rustynavy themes share the html.theme-earthy colors below
    (paper background, gray subtitles); the rustynavy themes then switch
    buttons, links, and boxes to navy in html.theme-rustynavy. Each variant
@@ -115,6 +117,20 @@ html.theme-rustynavy_n3 {     /* navy N3 section titles */
 
 html.theme-rustynavy_darkorange {  /* section titles in rust */
   --section-title: #a2471d;
+}
+
+html.theme-rustyclassic {     /* classic teal accents and text on the warm paper page */
+  --bg: #fbf8f3;
+  --footer-bg: #f3eee6;
+  --btn-bg: #fffdfa;
+  --rule: #ece5da;            /* lines between entries */
+  --masthead-line: #ece5da;
+  --avatar-ring: #e3d9cc;
+  --accent-soft: #e1eeeb;     /* button hover, job-market note */
+  --panel-bg: #ebf2ef;        /* abstract / summary box: light teal, so it stays visible on the paper */
+  --box-bg: #edf2ef;          /* teaching-interest boxes */
+  --cv-bg: #efe9df;
+  --cv-border: #e0d7ca;
 }
 
 /* Theme colors for parts of the base theme (no visible change in classic) */
