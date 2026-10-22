@@ -78,8 +78,8 @@ html.theme-earthy {           /* shared by all earthy themes ("Paper & Rust") */
   --menu-button: #1f3a5f;
   --masthead-line: #ece5da;
   --avatar-ring: #e3d9cc;
-  --tag-oa: #4d6a2c;
-  --tag-oa-bg: #e7ecd6;
+  --tag-oa: #2f6a48;          /* "Open access" tag: cooler green, so it stands apart from the rust buttons */
+  --tag-oa-bg: #e2eee5;
   --cv-bg: #efe9df;
   --cv-border: #e0d7ca;
   --cv-link-hover: rgba(162, 71, 29, 0.12);
@@ -439,6 +439,12 @@ body,
 
 .entry__panel p:last-child {
   margin-bottom: 0;
+}
+
+.entry__panel > :first-child {  /* no extra gap above the first line: the Research, Talks, and Teaching
+                                   pages use the archive layout, which keeps the browser's default
+                                   paragraph margin, so the text sat lower than the box's padding */
+  margin-top: 0;
 }
 
 @keyframes entry-fade {
