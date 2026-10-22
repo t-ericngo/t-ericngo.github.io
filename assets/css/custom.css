@@ -2,13 +2,115 @@
    Custom styles (loaded after main.css)
    ========================================================================== */
 
-:root {
-  --accent: #0f6b6b;          /* deep teal: links, buttons, section labels */
-  --accent-soft: #e6f2f1;     /* hover/active background */
-  --ink: #1d2125;
-  --muted: #5f6b76;
-  --rule: #eef1f3;
-  --panel-bg: #f5f8f8;
+/* --------------------------------------------------------------------------
+   COLOR THEMES. Choose one with `color_theme:` in _config.yml:
+     classic : white page, deep-teal accents (the original look)
+     earthy  : warm paper page, rust buttons and links, navy section titles
+   To fine-tune a theme, edit its color values below.
+   -------------------------------------------------------------------------- */
+
+:root {                       /* classic */
+  --bg: #fff;                 /* page background */
+  --footer-bg: #f2f3f3;
+  --ink: #1d2125;             /* body text and titles */
+  --muted: #5f6b76;           /* subtitles: authors, journal, dates, notes */
+  --heading-accent: #0f6b6b;  /* section titles (PEER-REVIEWED ARTICLES), teaching-interest labels */
+  --accent: #0f6b6b;          /* buttons */
+  --accent-soft: #e6f2f1;     /* button hover, job-market note */
+  --link: #0f6b6b;            /* links in text */
+  --link-hover: #0b5050;
+  --panel-bg: #f5f8f8;        /* abstract / summary box */
+  --panel-text: #333;
+  --box-bg: #f5f8f8;          /* teaching-interest boxes */
+  --soft-text: #444;          /* teaching-interest text */
+  --rule: #eef1f3;            /* lines between entries */
+  --btn-bg: #fff;
+  --btn-border: #c6d9d8;
+  --site-name: #0f2e2e;       /* name in the header */
+  --nav: #4a5560;             /* menu links */
+  --menu-button: #7a8288;     /* phone menu button */
+  --masthead-line: #eceff1;
+  --avatar-ring: #dfe4e6;
+  --tag-oa: #2e7d4f;          /* "Open access" tag */
+  --tag-oa-bg: #eaf5ee;
+  --cv-bg: #e9ecef;
+  --cv-border: #dcdfe3;
+  --cv-link-hover: rgba(15, 107, 107, 0.12);
+}
+
+html.theme-earthy {           /* earthy ("Paper & Rust") */
+  --bg: #fbf8f3;
+  --footer-bg: #f3eee6;
+  --ink: #1c1f26;
+  --muted: #5c6a7e;
+  --heading-accent: #1f3a5f;
+  --accent: #a2471d;
+  --accent-soft: #f4e8de;
+  --link: #a2471d;
+  --link-hover: #7c3615;
+  --panel-bg: #f5ece4;
+  --panel-text: #2a2826;
+  --box-bg: #f4efe7;
+  --soft-text: #3f3b37;
+  --rule: #ece5da;
+  --btn-bg: #fffdfa;
+  --btn-border: #e0c9b9;
+  --site-name: #1c1f26;
+  --nav: #4b5263;
+  --menu-button: #1f3a5f;
+  --masthead-line: #ece5da;
+  --avatar-ring: #e3d9cc;
+  --tag-oa: #4d6a2c;
+  --tag-oa-bg: #e7ecd6;
+  --cv-bg: #efe9df;
+  --cv-border: #e0d7ca;
+  --cv-link-hover: rgba(162, 71, 29, 0.12);
+}
+
+/* Theme colors for parts of the base theme (no visible change in classic) */
+html,
+body,
+.masthead,
+.greedy-nav,
+.greedy-nav .hidden-links,
+.author__urls {
+  background-color: var(--bg);
+}
+
+.page__footer {
+  background-color: var(--footer-bg);
+}
+
+.greedy-nav button {
+  background-color: var(--menu-button);
+}
+
+.theme-earthy .body-inter,
+.theme-earthy .page__title,
+.theme-earthy .author__name {
+  color: var(--ink);
+}
+
+.theme-earthy .author__bio {
+  color: var(--muted);
+}
+
+.theme-earthy .page__content a:not(.entry-btn),
+.theme-earthy .page__lead-note a,
+.theme-earthy .archive a:not(.entry-btn) {
+  color: var(--link);
+}
+
+.theme-earthy .page__content a:not(.entry-btn):hover,
+.theme-earthy .page__lead-note a:hover,
+.theme-earthy .archive a:not(.entry-btn):hover {
+  color: var(--link-hover);
+}
+
+.theme-earthy .author__urls-wrapper button {   /* phone "Follow" button */
+  color: var(--accent) !important;
+  background-color: var(--btn-bg);
+  border-color: var(--btn-border) !important;
 }
 
 /* ==========================================================================
@@ -17,7 +119,7 @@
 
 .masthead {
   border-bottom: 0;
-  box-shadow: 0 1px 0 #eceff1;
+  box-shadow: 0 1px 0 var(--masthead-line);
 }
 
 .greedy-nav .masthead__menu-item--lg a {   /* site name, top left (serif) */
@@ -25,12 +127,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: #0f2e2e !important;
+  color: var(--site-name) !important;
 }
 
 .greedy-nav a {
   font-weight: 500;
-  color: #4a5560;
+  color: var(--nav);
 }
 
 .greedy-nav a:hover {
@@ -50,7 +152,7 @@
     height: 150px;
     max-width: 150px;
     padding: 3px;
-    border: 1px solid #dfe4e6;
+    border: 1px solid var(--avatar-ring);
   }
 }
 
@@ -126,7 +228,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--heading-accent);
   border-bottom: 0;
 }
 
@@ -181,8 +283,8 @@
   line-height: 1.4;
   text-decoration: none !important;
   color: var(--accent) !important;
-  background: #fff;
-  border: 1px solid #c6d9d8;
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
@@ -216,8 +318,8 @@
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e7d4f;
-  background: #eaf5ee;
+  color: var(--tag-oa);
+  background: var(--tag-oa-bg);
   border-radius: 999px;
 }
 
@@ -237,7 +339,7 @@
   font-size: 15px;
   line-height: 1.6;
   text-align: left;
-  color: #333;
+  color: var(--panel-text);
   background: var(--panel-bg);
   border-left: 3px solid var(--accent);
   border-radius: 0 4px 4px 0;
@@ -275,7 +377,7 @@
 
 .interests__group {
   padding: 0.85rem 1rem;
-  background: var(--panel-bg);
+  background: var(--box-bg);
   border-radius: 6px;
 }
 
@@ -289,7 +391,7 @@
   margin: 0 0 0.45rem;
   font-size: 15px;
   line-height: 1.5;
-  color: #444;
+  color: var(--soft-text);
 }
 
 .interests__group p:last-child {
@@ -305,7 +407,7 @@
   padding-left: 1.1rem;
   font-size: 15px;
   line-height: 1.5;
-  color: #444;
+  color: var(--soft-text);
 }
 
 .interests__sublist li {
@@ -327,7 +429,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--heading-accent);
 }
 
 /* Simple link list (Teaching awards & evaluations): same size as abstracts and teaching interests */
@@ -367,8 +469,8 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   padding: 14px;
-  background: #e9ecef;
-  border: 1px solid #dcdfe3;
+  background: var(--cv-bg);
+  border: 1px solid var(--cv-border);
   border-radius: 6px;
 }
 
@@ -396,7 +498,7 @@
 }
 
 .cv-page a:hover {
-  background: rgba(15, 107, 107, 0.12);
+  background: var(--cv-link-hover);
 }
 
 .cv-viewer__status {
@@ -444,7 +546,7 @@
 }
 
 .entry__panel p {
-  color: #333;
+  color: var(--panel-text);
 }
 
 /* ==========================================================================
