@@ -65,6 +65,15 @@
   white-space: nowrap;
 }
 
+.sidebar p,
+.sidebar li {                /* sidebar bio and contact links (theme default: 12px) */
+  font-size: 13px;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {   /* narrow desktop sidebar: let bio phrases wrap */
+  .author__bio span { white-space: normal; }
+}
+
 .heading-inter .page__title {   /* page titles: About, Research, Talks, ... (serif) */
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: 1.75rem;
@@ -97,7 +106,7 @@
 
 /* Small note under a page title (e.g. Research page) */
 .page__lead-note {
-  font-size: 14.5px;
+  font-size: 15px;
   color: var(--muted);
   margin: -0.5rem 0 0.5rem;
 }
@@ -110,10 +119,10 @@
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {   /* small-caps section labels: above the 15.5px titles */
+.entry-section .entry-section__title {   /* teal caps section labels: same size as the 16px titles */
   margin: 2.2rem 0 0.25rem;
   padding-bottom: 0;
-  font-size: 15.6px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -132,7 +141,7 @@
 
 .entry .entry__title {        /* paper, talk, and course titles (beats .heading-inter h3) */
   margin: 0 0 0.2rem;
-  font-size: 0.86rem;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
   color: var(--ink);
@@ -141,7 +150,7 @@
 .entry__authors,
 .entry__meta {
   margin: 0.1rem 0 0;
-  font-size: 0.74rem;
+  font-size: 13.8px;
   line-height: 1.5;
   color: var(--muted);
 }
@@ -166,7 +175,7 @@
   margin: 0;
   padding: 0.28rem 0.65rem;
   font-family: inherit;
-  font-size: 0.72rem;
+  font-size: 13.5px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.4;
@@ -222,10 +231,10 @@
   background: #f1ecf9;
 }
 
-.entry__panel {               /* abstract / summary text: 14.5px, 1px below the 15.5px titles */
+.entry__panel {               /* abstract / summary text: 15px, 1px below the 16px titles */
   margin-top: 0.7rem;
   padding: 0.8rem 1rem;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.6;
   text-align: left;
   color: #333;
@@ -272,13 +281,13 @@
 
 .interests .interests__group h3 {
   margin: 0 0 0.4rem;
-  font-size: 0.86rem;
+  font-size: 16px;
   color: var(--ink);
 }
 
 .interests__group p {
   margin: 0 0 0.45rem;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.5;
   color: #444;
 }
@@ -294,7 +303,7 @@
 .interests__sublist {
   margin: 0;
   padding-left: 1.1rem;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.5;
   color: #444;
 }
@@ -314,7 +323,7 @@
 
 .interests__label {
   display: block;
-  font-size: 0.7rem;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -325,7 +334,7 @@
 .plain-list {
   margin: 0.5rem 0 0;
   padding-left: 1.1rem;
-  font-size: 14.5px;
+  font-size: 15px;
 }
 
 .plain-list li {
@@ -441,20 +450,20 @@
 /* ==========================================================================
    Phones (< 768px): the theme's base size drops from 18px to 16px, which would
    make rem-based entry text too small, so these sizes are set directly.
-   Hierarchy: section label 15px (caps) ≥ title 15px > abstract 14px > subtitle (author/venue/date line) 13px.
+   Hierarchy: section label 15.5px (caps) = title 15.5px > abstract 14.5px > subtitle (author/venue/date line) 13.5px.
    ========================================================================== */
 @media (max-width: 767px) {
-  .entry .entry__title { font-size: 15px; }
+  .entry .entry__title { font-size: 15.5px; }
   .entry__authors,
-  .entry__meta { font-size: 13px; }          /* subtitles */
-  .entry-section .entry-section__title { font-size: 15px; }
-  .entry__panel { font-size: 14px; }
-  .entry-btn { font-size: 12.5px; }
-  .page__lead-note { font-size: 14px; }
-  .interests .interests__group h3 { font-size: 15px; }
+  .entry__meta { font-size: 13.5px; }        /* subtitles */
+  .entry-section .entry-section__title { font-size: 15.5px; }
+  .entry__panel { font-size: 14.5px; }
+  .entry-btn { font-size: 13px; }
+  .page__lead-note { font-size: 14.5px; }
+  .interests .interests__group h3 { font-size: 15.5px; }
   .interests__group p,
-  .interests__sublist { font-size: 13.5px; }
-  .plain-list { font-size: 14px; }
+  .interests__sublist { font-size: 14px; }
+  .plain-list { font-size: 14.5px; }
 }
 
 /* Menu links marked hide_on_phone in _data/navigation.yml (e.g. About) are
