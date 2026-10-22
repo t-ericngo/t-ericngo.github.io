@@ -17,7 +17,7 @@ Pushing to `master` rebuilds and publishes the site through GitHub Actions
 | Sidebar (photo, bio, links) | `author:` section of `_config.yml` |
 | Menu | `_data/navigation.yml` |
 | Styles | `assets/css/custom.css` (colors, buttons); font and text size in `assets/css/main.scss` |
-| Color theme | `color_theme` in `_config.yml`: `earthy` or `classic` (each theme's colors are at the top of `assets/css/custom.css`) |
+| Color theme | `color_theme` in `_config.yml`: `earthy_n2`, `earthy_n3`, or `classic` (each theme's colors are at the top of `assets/css/custom.css`) |
 
 ## Common updates
 
