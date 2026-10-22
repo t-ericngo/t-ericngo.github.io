@@ -118,6 +118,16 @@ body,
   color: var(--link-hover);
 }
 
+/* Job-market note (About page): its links use the section-title navy so they
+   stand out from the light rust box */
+.theme-earthy .page__content .job-market-note a:not(.entry-btn) {
+  color: var(--heading-accent);
+}
+
+.theme-earthy .page__content .job-market-note a:not(.entry-btn):hover {
+  color: var(--ink);
+}
+
 .theme-earthy .author__urls-wrapper button {   /* phone "Follow" button */
   color: var(--accent) !important;
   background-color: var(--btn-bg);
