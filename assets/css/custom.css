@@ -8,7 +8,8 @@
      earthy_n2            : warm paper page, rust buttons and links, navy section titles (#335a8a)
      earthy_n3            : same as earthy_n2 with a lighter navy for section titles (#3b679b)
      earthy_darkorange    : same as earthy_n3, but section titles in the button rust (#a2471d)
-     rustynavy_n3         : warm paper page, navy (#3b679b) buttons, links, boxes, and section titles
+     rustynavy_n3         : warm paper page, lighter navy (#4a73a2) buttons, links, and boxes,
+                            navy (#3b679b) section titles, rust teaching-interest labels
      rustynavy_darkorange : same as rustynavy_n3, but section titles in rust (#a2471d)
    All earthy and rustynavy themes share the html.theme-earthy colors below
    (paper background, gray subtitles); the rustynavy themes then switch
@@ -23,8 +24,11 @@
   --ink: #1d2125;             /* body text and titles */
   --muted: #5f6b76;           /* subtitles: authors, journal, dates, notes */
   --heading-accent: #0f6b6b;  /* section titles (PEER-REVIEWED ARTICLES), teaching-interest labels, job-market-note links */
-  /* Optional, set by some themes: --section-title (section titles only) and
-     --note-link (job-market-note links only); both default to --heading-accent */
+  /* Optional, set by some themes: --section-title (section titles only),
+     --interest-label (teaching-interest labels only), and --note-link
+     (job-market-note links only), which default to --heading-accent; and
+     --accent-edge (left edge of the abstract box and job-market note),
+     which defaults to --accent */
   --accent: #0f6b6b;          /* buttons */
   --accent-soft: #e6f2f1;     /* button hover, job-market note */
   --link: #0f6b6b;            /* links in text */
@@ -90,20 +94,22 @@ html.theme-earthy_darkorange {  /* earthy_n3 with section titles in the button r
   --section-title: #a2471d;
 }
 
-html.theme-rustynavy {        /* shared by the rustynavy themes: navy buttons, links, and boxes on warm paper */
-  --heading-accent: #3b679b;
-  --accent: #3b679b;
-  --accent-soft: #e4ebf4;     /* button hover, job-market note */
-  --link: #3b679b;
-  --link-hover: #284a73;
-  --panel-bg: #ebf0f6;        /* abstract / summary box */
-  --box-bg: #eef2f7;          /* teaching-interest boxes */
-  --btn-border: #c5d3e4;
-  --cv-link-hover: rgba(59, 103, 155, 0.12);
+html.theme-rustynavy {        /* shared by the rustynavy themes: light navy buttons, links, and boxes on warm paper */
+  --heading-accent: #3b679b;  /* navy N3 (section titles in rustynavy_n3) */
+  --accent: #4a73a2;          /* lighter navy: button text, open "Abstract" button. Lightest shade that keeps text easy to read (4.6:1) */
+  --accent-edge: #8ea9ca;     /* light navy: left edge of the abstract box and job-market note */
+  --accent-soft: #eaeff6;     /* button hover, job-market note */
+  --link: #4a73a2;
+  --link-hover: #3b679b;
+  --panel-bg: #f0f4f8;        /* abstract / summary box */
+  --box-bg: #f2f5f8;          /* teaching-interest boxes */
+  --btn-border: #d2dcea;
+  --cv-link-hover: rgba(74, 115, 162, 0.12);
   --note-link: #a2471d;       /* job-market-note links in rust, so they stand out from the light navy box */
+  --interest-label: #a2471d;  /* "Substantive" / "Methods" labels in rust */
 }
 
-html.theme-rustynavy_n3 {     /* navy section titles */
+html.theme-rustynavy_n3 {     /* navy N3 section titles */
   --section-title: #3b679b;
 }
 
@@ -250,7 +256,7 @@ body,
   line-height: 1.5;
   color: var(--ink);
   background: var(--accent-soft);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--accent-edge, var(--accent));
   border-radius: 0 6px 6px 0;
 }
 
@@ -400,7 +406,7 @@ body,
   text-align: left;
   color: var(--panel-text);
   background: var(--panel-bg);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--accent-edge, var(--accent));
   border-radius: 0 4px 4px 0;
   animation: entry-fade 0.18s ease-out;
 }
@@ -488,7 +494,7 @@ body,
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--heading-accent);
+  color: var(--interest-label, var(--heading-accent));
 }
 
 /* Simple link list (Teaching awards & evaluations): same size as abstracts and teaching interests */
