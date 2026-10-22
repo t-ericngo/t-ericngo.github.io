@@ -5,7 +5,7 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js theme-{{ site.color_theme | default: 'classic' }}">
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js theme-{{ site.color_theme | default: 'classic' }}{% if site.color_theme contains 'earthy' %} theme-earthy{% endif %}">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
