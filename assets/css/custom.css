@@ -67,7 +67,7 @@
 
 .sidebar p,
 .sidebar li {                /* sidebar bio and contact links (theme default: 12px) */
-  font-size: 12.5px;
+  font-size: 12px;
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {   /* narrow desktop sidebar: let bio phrases wrap */

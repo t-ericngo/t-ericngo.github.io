@@ -26,7 +26,7 @@ author:
   name             : "T. Eric Ngo"
   pronouns         : # example: "she/her"  
   # bio: <br> starts a new line; each <span> keeps an area on one line (wraps only at the dots)
-  bio              : "PhD Candidate in <span>Political Science</span>,<br><span>University of Iowa</span><br><span>International relations</span> · <span>Foreign policy</span> · <span>Elite politics</span> · <span>Authoritarian politics</span> · <span>Computational social science</span>"
+  bio              : "PhD Candidate in <span>Political Science</span>,<br><span>University of Iowa</span><br><span>International relations</span>&nbsp;· <span>Foreign policy</span>&nbsp;· <span>Elite politics</span>&nbsp;· <span>Authoritarian politics</span>&nbsp;· <span>Computational social science</span>"
   location         : "Iowa City, IA, USA"
   employer         : "University of Iowa"
   uri              : # URL
