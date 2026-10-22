@@ -68,7 +68,7 @@ html.theme-earthy {           /* shared by all earthy themes ("Paper & Rust") */
   --link-hover: #7c3615;
   --panel-bg: #f5ece4;
   --panel-text: #2a2826;
-  --box-bg: #f4efe7;
+  --box-bg: #f5ece4;          /* teaching-interest boxes: same light rust tint as the abstract box */
   --soft-text: #3f3b37;
   --rule: #ece5da;
   --btn-bg: #fffdfa;
