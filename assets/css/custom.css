@@ -43,7 +43,7 @@ html.theme-earthy {           /* earthy ("Paper & Rust") */
   --footer-bg: #f3eee6;
   --ink: #1c1f26;
   --muted: #5c6a7e;
-  --heading-accent: #1f3a5f;
+  --heading-accent: #335a8a;  /* lighter navy, so section titles stand apart from the near-black titles */
   --accent: #a2471d;
   --accent-soft: #f4e8de;
   --link: #a2471d;
