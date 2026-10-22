@@ -46,7 +46,7 @@
    _sass/_variables.scss makes Inter the default for the whole theme. */
 .body-inter {
   font-family: "Inter", $sans-serif;
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.65;
   color: #1d2125;
 }
@@ -72,7 +72,7 @@
 
 /* ===== Mobile adjustments (≤ 768px) ===== */
 @media (max-width: 768px) {
-  .body-inter { font-size: 15px; }
+  .body-inter { font-size: 15.5px; }
   .heading-inter h1 { font-size: 1.35rem; }
   .heading-inter h2 { font-size: 1.05rem; }
 }
