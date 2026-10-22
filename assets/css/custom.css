@@ -7,6 +7,8 @@
      classic              : white page, deep-teal accents (the original look)
      earthy_n2            : warm paper page, rust buttons and links, navy section titles (#335a8a)
      earthy_n3            : same as earthy_n2 with a lighter navy for section titles (#3b679b)
+     earthy_n2.5          : same as earthy_n3, but section titles and teaching-interest labels in
+                            the navy halfway between N2 and N3 (#376092)
      earthy_darkorange    : same as earthy_n3, but section titles in the button rust (#a2471d)
      rustynavy_n3         : warm paper page, navy N3 (#3b679b) buttons, links, and section titles,
                             light navy edges, navy-tinted boxes, rust teaching-interest labels
@@ -90,6 +92,12 @@ html.theme-earthy_n2 {        /* navy section titles, lightness 38 */
 html.theme-earthy_n3 {        /* lighter navy section titles, lightness 43 (like the old teal) */
   --heading-accent: #3b679b;
   --note-link: #335a8a;       /* job-market-note links in the darker N2 navy: easier to read on the rust-tinted note */
+}
+
+/* earthy_n2.5: the backslash is needed because a plain "." in a CSS selector starts a new class name */
+html.theme-earthy_n2\.5 {    /* earthy_n3 with section titles and teaching labels halfway between N2 and N3 */
+  --heading-accent: #376092;  /* midpoint navy (6.1:1 on the paper): section titles and teaching-interest labels */
+  --note-link: #335a8a;       /* job-market-note links: N2, as in earthy_n3 */
 }
 
 html.theme-earthy_darkorange {  /* earthy_n3 with section titles in the button rust */
