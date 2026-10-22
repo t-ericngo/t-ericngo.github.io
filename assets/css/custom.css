@@ -89,11 +89,13 @@ html.theme-earthy_n2 {        /* navy section titles, lightness 38 */
 
 html.theme-earthy_n3 {        /* lighter navy section titles, lightness 43 (like the old teal) */
   --heading-accent: #3b679b;
+  --note-link: #335a8a;       /* job-market-note links in the darker N2 navy: easier to read on the rust-tinted note */
 }
 
 html.theme-earthy_darkorange {  /* earthy_n3 with section titles in the button rust */
-  --heading-accent: #3b679b;    /* teaching-interest labels and job-market-note links stay navy */
+  --heading-accent: #3b679b;    /* teaching-interest labels stay navy */
   --section-title: #a2471d;
+  --note-link: #335a8a;         /* job-market-note links in the darker N2 navy: easier to read on the rust-tinted note */
 }
 
 html.theme-rustynavy {        /* shared by the rustynavy themes: navy buttons and links, navy-tinted boxes on warm paper */
