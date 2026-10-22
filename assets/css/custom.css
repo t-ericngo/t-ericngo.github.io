@@ -456,3 +456,9 @@
   .interests__sublist { font-size: 13.5px; }
   .plain-list { font-size: 14px; }
 }
+
+/* Menu links marked hide_on_phone in _data/navigation.yml (e.g. About) are
+   left out of the top bar on phones, so Research keeps the one visible slot */
+@media (max-width: 599px) {
+  .greedy-nav .visible-links li.masthead__menu-item--phone-hidden { display: none; }
+}
