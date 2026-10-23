@@ -15,7 +15,7 @@ description              : &description "PhD candidate at the University of Iowa
 url                      : "https://t-ericngo.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "t-ericngo/t-ericngo.github.io"
-color_theme              : "earthy_n2.5"   # color options: "earthy_n2", "earthy_n2.5", "earthy_n3", "earthy_darkorange", "rustynavy_n3", "rustynavy_n2.5", "rustynavy_darkorange", "rustyclassic", or "classic"; each is described at the top of assets/css/custom.css
+color_theme              : "rustynavy_n2.5"   # color options: "earthy_n2", "earthy_n2.5", "earthy_n3", "earthy_darkorange", "rustynavy_n3", "rustynavy_n2.5", "rustynavy_darkorange", "rustyclassic", or "classic"; each is described at the top of assets/css/custom.css
 
 
 # Site Author - The following control what appear as part of the author content on the side bar.
