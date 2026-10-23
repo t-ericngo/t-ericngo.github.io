@@ -29,7 +29,12 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Pinned to Ubuntu 24.04: on Oct 19, 2026 GitHub began moving "ubuntu-latest" to
+    # Ubuntu 26.04, which the pinned ruby/setup-ruby version below does not recognize
+    # ("detected as self-hosted"), so every build failed at "Setup Ruby".
+    # To go back to ubuntu-latest, first update ruby/setup-ruby to a release that
+    # supports Ubuntu 26.04.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
