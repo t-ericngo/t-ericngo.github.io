@@ -12,6 +12,8 @@
      earthy_darkorange    : same as earthy_n3, but section titles in the button rust (#a2471d)
      rustynavy_n3         : warm paper page, navy N3 (#3b679b) buttons, links, and section titles,
                             light navy edges, navy-tinted boxes, rust teaching-interest labels
+     rustynavy_n2.5       : same as rustynavy_n3, but section titles in the navy halfway between
+                            N2 and N3 (#376092)
      rustynavy_darkorange : same as rustynavy_n3, but section titles in rust (#a2471d)
      rustyclassic         : classic (deep-teal accents) on the warm paper page, with light teal
                             boxes and warm footer, lines, and buttons to suit the paper
@@ -123,6 +125,12 @@ html.theme-rustynavy {        /* shared by the rustynavy themes: navy buttons an
 
 html.theme-rustynavy_n3 {     /* navy N3 section titles */
   --section-title: #3b679b;
+}
+
+/* rustynavy_n2.5: the backslash is needed because a plain "." in a CSS selector starts a new class name */
+html.theme-rustynavy_n2\.5 {  /* rustynavy_n3 with section titles halfway between N2 and N3 */
+  --section-title: #376092;   /* midpoint navy (6.1:1 on the paper); boxes keep the same navy tint,
+                                 since N2, N2.5, and N3 are one hue at different lightness */
 }
 
 html.theme-rustynavy_darkorange {  /* section titles in rust */
