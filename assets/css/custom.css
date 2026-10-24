@@ -320,13 +320,16 @@ body,
   margin-bottom: 1.5rem;
 }
 
-.entry-section .entry-section__title {   /* caps section labels: same size as the 16px titles */
+.entry-section .entry-section__title {   /* section titles (Peer-Reviewed Articles, 2026, Teaching Interests):
+                                            serif like the page titles and your name, between the
+                                            page titles and the 16px paper titles in size */
   margin: 2.2rem 0 0.25rem;
   padding-bottom: 0;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
   color: var(--section-title, var(--heading-accent));
   border-bottom: 0;
 }
@@ -657,13 +660,13 @@ body,
 /* ==========================================================================
    Phones (< 768px): the theme's base size drops from 18px to 16px, which would
    make rem-based entry text too small, so these sizes are set directly.
-   Hierarchy: section label 15.5px (caps) = title 15.5px > abstract 14.5px > subtitle (author/venue/date line) 13.5px.
+   Hierarchy: section title 19px (serif) > title 15.5px > abstract 14.5px > subtitle (author/venue/date line) 13.5px.
    ========================================================================== */
 @media (max-width: 767px) {
   .entry .entry__title { font-size: 15.5px; }
   .entry__authors,
   .entry__meta { font-size: 13.5px; }        /* subtitles */
-  .entry-section .entry-section__title { font-size: 15.5px; }
+  .entry-section .entry-section__title { font-size: 19px; }
   .entry__panel { font-size: 14.5px; }
   .entry-btn { font-size: 13px; }
   .page__lead-note { font-size: 14.5px; }
